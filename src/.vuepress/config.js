@@ -4,7 +4,7 @@ module.exports = config({
   title: "Desktop Dyno",
   description: "foo bar",
 
-  dest: "./dist",
+  dest: "./docs",
 
   head: [
     ["script", { src: "https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" }],

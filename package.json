@@ -4,10 +4,10 @@
   "description": "Source for desktopdyno.org",
   "license": "MIT",
   "scripts": {
-    "docs:build": "vuepress build docs",
-    "dev:clean-dev": "vuepress dev docs --no-cache",
-    "docs:dev": "vuepress dev docs",
-    "docs:eject-theme": "vuepress eject-hope docs"
+    "docs:build": "vuepress build src",
+    "dev:clean-dev": "vuepress dev src --no-cache",
+    "docs:dev": "vuepress dev src",
+    "docs:eject-theme": "vuepress eject-hope src"
   },
   "devDependencies": {
     "vuepress": "^1.8.2",
