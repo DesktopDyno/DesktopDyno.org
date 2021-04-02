@@ -9,12 +9,12 @@
   },
   "items": [
     {
-      "title": "Intro Page",
-      "url": "https://desktopdyno.org/intro/",
-      "id": "https://desktopdyno.org/intro/",
-      "content_html": "<h1 id=\"intro-page\"> Intro Page</h1>\n<p>Place your introducation and profile here.</p>\n",
+      "title": "Guide",
+      "url": "https://desktopdyno.org/guide/",
+      "id": "https://desktopdyno.org/guide/",
+      "content_html": "<p>This is the guide to Desktop Dyno.</p>\n<div><p>Warning</p>\n<p>Ensure you read the fine print!</p>\n</div>\n<p>First, you must understand the power of <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.89883em;vertical-align:-0.2155em;\"></span><span><span>L</span><span style=\"margin-right:-0.36em;\"></span><span><span><span style=\"height:0.68333em;\"><span style=\"top:-2.904999em;\"><span style=\"height:2.7em;\"></span><span><span>A</span></span></span></span></span></span><span style=\"margin-right:-0.15em;\"></span><span><span>T</span><span style=\"margin-right:-0.1667em;\"></span><span><span><span style=\"height:0.46782999999999997em;\"><span style=\"top:-2.7845em;\"><span style=\"height:3em;\"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style=\"height:0.2155em;\"><span></span></span></span></span><span style=\"margin-right:-0.125em;\"></span><span>X</span></span></span></span></span></span> to study motors.</p>\n",
       "date_published": "2021-04-02T03:48:18.000Z",
-      "date_modified": "2021-04-02T03:48:18.000Z",
+      "date_modified": "2021-04-02T05:16:13.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"
@@ -27,6 +27,20 @@
       "url": "https://desktopdyno.org/machines/dc-machine/",
       "id": "https://desktopdyno.org/machines/dc-machine/",
       "content_html": "<p>Foo barr</p>\n",
+      "date_published": "2021-04-02T05:16:13.000Z",
+      "date_modified": "2021-04-02T05:16:13.000Z",
+      "authors": [
+        {
+          "name": "Nathan Petersen"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "Induction Machine",
+      "url": "https://desktopdyno.org/machines/induction-machine/",
+      "id": "https://desktopdyno.org/machines/induction-machine/",
+      "content_html": "<p>Foo bar baz</p>\n",
       "date_published": "2021-04-02T05:16:13.000Z",
       "date_modified": "2021-04-02T05:16:13.000Z",
       "authors": [
@@ -51,11 +65,11 @@
       "tags": []
     },
     {
-      "title": "Guide",
-      "url": "https://desktopdyno.org/guide/",
-      "id": "https://desktopdyno.org/guide/",
-      "content_html": "<p>This is the guide to Desktop Dyno.</p>\n<div><p>Warning</p>\n<p>Ensure you read the fine print!</p>\n</div>\n<p>First, you must understand the power of <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.89883em;vertical-align:-0.2155em;\"></span><span><span>L</span><span style=\"margin-right:-0.36em;\"></span><span><span><span style=\"height:0.68333em;\"><span style=\"top:-2.904999em;\"><span style=\"height:2.7em;\"></span><span><span>A</span></span></span></span></span></span><span style=\"margin-right:-0.15em;\"></span><span><span>T</span><span style=\"margin-right:-0.1667em;\"></span><span><span><span style=\"height:0.46782999999999997em;\"><span style=\"top:-2.7845em;\"><span style=\"height:3em;\"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style=\"height:0.2155em;\"><span></span></span></span></span><span style=\"margin-right:-0.125em;\"></span><span>X</span></span></span></span></span></span> to study motors.</p>\n",
-      "date_published": "2021-04-02T03:48:18.000Z",
+      "title": "Synchronous Machine",
+      "url": "https://desktopdyno.org/machines/synchronous-machine/",
+      "id": "https://desktopdyno.org/machines/synchronous-machine/",
+      "content_html": "<p>foo bar baz</p>\n",
+      "date_published": "2021-04-02T05:16:13.000Z",
       "date_modified": "2021-04-02T05:16:13.000Z",
       "authors": [
         {
@@ -85,48 +99,6 @@
       "content_html": "<p>Welcome to the Desktop Dyno Project.</p>\n",
       "date_published": "2021-04-02T03:48:18.000Z",
       "date_modified": "2021-04-02T03:48:18.000Z",
-      "authors": [
-        {
-          "name": "Nathan Petersen"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "title": "Project home",
-      "url": "https://desktopdyno.org/home/",
-      "id": "https://desktopdyno.org/home/",
-      "content_html": "<p>This is an example of a normal homepage. You can place your main content here.</p>\n<p>For related descriptions of configuration items, please see <a href=\"https://vuepress-theme-hope.github.io/guide/layout/home/\" target=\"_blank\" rel=\"noopener noreferrer\">Home Page Layout Configuration</a>.</p>\n",
-      "date_published": "2021-04-02T03:48:18.000Z",
-      "date_modified": "2021-04-02T03:48:18.000Z",
-      "authors": [
-        {
-          "name": "Nathan Petersen"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "title": "Synchronous Machine",
-      "url": "https://desktopdyno.org/machines/synchronous-machine/",
-      "id": "https://desktopdyno.org/machines/synchronous-machine/",
-      "content_html": "<p>foo bar baz</p>\n",
-      "date_published": "2021-04-02T05:16:13.000Z",
-      "date_modified": "2021-04-02T05:16:13.000Z",
-      "authors": [
-        {
-          "name": "Nathan Petersen"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "title": "Induction Machine",
-      "url": "https://desktopdyno.org/machines/induction-machine/",
-      "id": "https://desktopdyno.org/machines/induction-machine/",
-      "content_html": "<p>Foo bar baz</p>\n",
-      "date_published": "2021-04-02T05:16:13.000Z",
-      "date_modified": "2021-04-02T05:16:13.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"

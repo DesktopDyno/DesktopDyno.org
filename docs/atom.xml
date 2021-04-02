@@ -6,7 +6,7 @@
   <author>
     <name>Nathan Petersen</name>
   </author>
-  <updated>2021-04-02T05:16:20.635Z</updated>
+  <updated>2021-04-02T05:39:05.088Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://desktopdyno.org/atom.xml"/>
   <link rel="alternate" href="https://desktopdyno.org/"/>
@@ -15,12 +15,15 @@
     <name>Nathan Petersen</name>
   </contributor>
   <entry>
-    <title type="html">Intro Page</title>
-    <id>https://desktopdyno.org/intro/</id>
-    <link href="https://desktopdyno.org/intro/"/>
-    <updated>2021-04-02T03:48:18.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="intro-page"> Intro Page</h1>
-<p>Place your introducation and profile here.</p>
+    <title type="html">Guide</title>
+    <id>https://desktopdyno.org/guide/</id>
+    <link href="https://desktopdyno.org/guide/"/>
+    <updated>2021-04-02T05:16:13.000Z</updated>
+    <content type="html"><![CDATA[<p>This is the guide to Desktop Dyno.</p>
+<div><p>Warning</p>
+<p>Ensure you read the fine print!</p>
+</div>
+<p>First, you must understand the power of <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>L</span><span style="margin-right:-0.36em;"></span><span><span><span style="height:0.68333em;"><span style="top:-2.904999em;"><span style="height:2.7em;"></span><span><span>A</span></span></span></span></span></span><span style="margin-right:-0.15em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span></span> to study motors.</p>
 ]]></content>
     <author>
       <name>Nathan Petersen</name>
@@ -48,6 +51,22 @@
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
+    <title type="html">Induction Machine</title>
+    <id>https://desktopdyno.org/machines/induction-machine/</id>
+    <link href="https://desktopdyno.org/machines/induction-machine/"/>
+    <updated>2021-04-02T05:16:13.000Z</updated>
+    <content type="html"><![CDATA[<p>Foo bar baz</p>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-04-02T05:16:13.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
     <title type="html">Reluctance Machine</title>
     <id>https://desktopdyno.org/machines/reluctance-machine/</id>
     <link href="https://desktopdyno.org/machines/reluctance-machine/"/>
@@ -64,15 +83,11 @@
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
-    <title type="html">Guide</title>
-    <id>https://desktopdyno.org/guide/</id>
-    <link href="https://desktopdyno.org/guide/"/>
+    <title type="html">Synchronous Machine</title>
+    <id>https://desktopdyno.org/machines/synchronous-machine/</id>
+    <link href="https://desktopdyno.org/machines/synchronous-machine/"/>
     <updated>2021-04-02T05:16:13.000Z</updated>
-    <content type="html"><![CDATA[<p>This is the guide to Desktop Dyno.</p>
-<div><p>Warning</p>
-<p>Ensure you read the fine print!</p>
-</div>
-<p>First, you must understand the power of <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>L</span><span style="margin-right:-0.36em;"></span><span><span><span style="height:0.68333em;"><span style="top:-2.904999em;"><span style="height:2.7em;"></span><span><span>A</span></span></span></span></span></span><span style="margin-right:-0.15em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span></span> to study motors.</p>
+    <content type="html"><![CDATA[<p>foo bar baz</p>
 ]]></content>
     <author>
       <name>Nathan Petersen</name>
@@ -80,7 +95,7 @@
     <contributor>
       <name>Nathan Petersen</name>
     </contributor>
-    <published>2021-04-02T03:48:18.000Z</published>
+    <published>2021-04-02T05:16:13.000Z</published>
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
@@ -120,55 +135,6 @@
       <name>Nathan Petersen</name>
     </contributor>
     <published>2021-04-02T03:48:18.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
-    <title type="html">Project home</title>
-    <id>https://desktopdyno.org/home/</id>
-    <link href="https://desktopdyno.org/home/"/>
-    <updated>2021-04-02T03:48:18.000Z</updated>
-    <content type="html"><![CDATA[<p>This is an example of a normal homepage. You can place your main content here.</p>
-<p>For related descriptions of configuration items, please see <a href="https://vuepress-theme-hope.github.io/guide/layout/home/" target="_blank" rel="noopener noreferrer">Home Page Layout Configuration</a>.</p>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-04-02T03:48:18.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
-    <title type="html">Synchronous Machine</title>
-    <id>https://desktopdyno.org/machines/synchronous-machine/</id>
-    <link href="https://desktopdyno.org/machines/synchronous-machine/"/>
-    <updated>2021-04-02T05:16:13.000Z</updated>
-    <content type="html"><![CDATA[<p>foo bar baz</p>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-04-02T05:16:13.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
-    <title type="html">Induction Machine</title>
-    <id>https://desktopdyno.org/machines/induction-machine/</id>
-    <link href="https://desktopdyno.org/machines/induction-machine/"/>
-    <updated>2021-04-02T05:16:13.000Z</updated>
-    <content type="html"><![CDATA[<p>Foo bar baz</p>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-04-02T05:16:13.000Z</published>
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
 </feed>
