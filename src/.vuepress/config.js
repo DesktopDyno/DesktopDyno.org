@@ -14,7 +14,7 @@ module.exports = config({
   ],
 
   themeConfig: {
-    logo: "/logo.svg",
+    logo: "/logo-transparent.png",
     hostname: "https://desktopdyno.org",
 
     baseLang: "en-US",
@@ -37,6 +37,7 @@ module.exports = config({
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
+      { text: "Machines", link: "/machines/" },
     ],
 
     sidebar: {
