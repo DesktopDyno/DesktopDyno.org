@@ -6,8 +6,8 @@
     <link>https://desktopdyno.org/</link>
     <description>foo bar</description>
     <language>en-US</language>
-    <pubDate>Fri, 02 Apr 2021 05:39:05 GMT</pubDate>
-    <lastBuildDate>Fri, 02 Apr 2021 05:39:05 GMT</lastBuildDate>
+    <pubDate>Fri, 02 Apr 2021 05:40:49 GMT</pubDate>
+    <lastBuildDate>Fri, 02 Apr 2021 05:40:49 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>Copyright by Nathan Petersen</copyright>
@@ -25,21 +25,28 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>DC Machine</title>
-      <link>https://desktopdyno.org/machines/dc-machine/</link>
-      <guid>https://desktopdyno.org/machines/dc-machine/</guid>
-      <source url="https://desktopdyno.org/rss.xml">DC Machine</source>
-      <pubDate>Fri, 02 Apr 2021 05:16:13 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Foo barr</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Induction Machine</title>
       <link>https://desktopdyno.org/machines/induction-machine/</link>
       <guid>https://desktopdyno.org/machines/induction-machine/</guid>
       <source url="https://desktopdyno.org/rss.xml">Induction Machine</source>
       <pubDate>Fri, 02 Apr 2021 05:16:13 GMT</pubDate>
       <content:encoded><![CDATA[<p>Foo bar baz</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Machines</title>
+      <link>https://desktopdyno.org/machines/</link>
+      <guid>https://desktopdyno.org/machines/</guid>
+      <source url="https://desktopdyno.org/rss.xml">Machines</source>
+      <pubDate>Fri, 02 Apr 2021 05:16:13 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Electric Machines!</p>
+<p>Types:</p>
+<ul>
+<li><a href="./dc-machine.html">DC Machine</a></li>
+<li><a href="./induction-machine.html">Induction Machine</a></li>
+<li><a href="./synchronous-machine.html">Synchronous Machine</a></li>
+<li><a href="./reluctance-machine.html">Reluctance Machine</a></li>
+</ul>
 ]]></content:encoded>
     </item>
     <item>
@@ -61,19 +68,12 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>Machines</title>
-      <link>https://desktopdyno.org/machines/</link>
-      <guid>https://desktopdyno.org/machines/</guid>
-      <source url="https://desktopdyno.org/rss.xml">Machines</source>
+      <title>DC Machine</title>
+      <link>https://desktopdyno.org/machines/dc-machine/</link>
+      <guid>https://desktopdyno.org/machines/dc-machine/</guid>
+      <source url="https://desktopdyno.org/rss.xml">DC Machine</source>
       <pubDate>Fri, 02 Apr 2021 05:16:13 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Electric Machines!</p>
-<p>Types:</p>
-<ul>
-<li><a href="./dc-machine.html">DC Machine</a></li>
-<li><a href="./induction-machine.html">Induction Machine</a></li>
-<li><a href="./synchronous-machine.html">Synchronous Machine</a></li>
-<li><a href="./reluctance-machine.html">Reluctance Machine</a></li>
-</ul>
+      <content:encoded><![CDATA[<p>Foo barr</p>
 ]]></content:encoded>
     </item>
     <item>

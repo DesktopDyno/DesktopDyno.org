@@ -23,10 +23,10 @@
       "tags": []
     },
     {
-      "title": "DC Machine",
-      "url": "https://desktopdyno.org/machines/dc-machine/",
-      "id": "https://desktopdyno.org/machines/dc-machine/",
-      "content_html": "<p>Foo barr</p>\n",
+      "title": "Induction Machine",
+      "url": "https://desktopdyno.org/machines/induction-machine/",
+      "id": "https://desktopdyno.org/machines/induction-machine/",
+      "content_html": "<p>Foo bar baz</p>\n",
       "date_published": "2021-04-02T05:16:13.000Z",
       "date_modified": "2021-04-02T05:16:13.000Z",
       "authors": [
@@ -37,10 +37,10 @@
       "tags": []
     },
     {
-      "title": "Induction Machine",
-      "url": "https://desktopdyno.org/machines/induction-machine/",
-      "id": "https://desktopdyno.org/machines/induction-machine/",
-      "content_html": "<p>Foo bar baz</p>\n",
+      "title": "Machines",
+      "url": "https://desktopdyno.org/machines/",
+      "id": "https://desktopdyno.org/machines/",
+      "content_html": "<p>Electric Machines!</p>\n<p>Types:</p>\n<ul>\n<li><a href=\"./dc-machine.html\">DC Machine</a></li>\n<li><a href=\"./induction-machine.html\">Induction Machine</a></li>\n<li><a href=\"./synchronous-machine.html\">Synchronous Machine</a></li>\n<li><a href=\"./reluctance-machine.html\">Reluctance Machine</a></li>\n</ul>\n",
       "date_published": "2021-04-02T05:16:13.000Z",
       "date_modified": "2021-04-02T05:16:13.000Z",
       "authors": [
@@ -79,10 +79,10 @@
       "tags": []
     },
     {
-      "title": "Machines",
-      "url": "https://desktopdyno.org/machines/",
-      "id": "https://desktopdyno.org/machines/",
-      "content_html": "<p>Electric Machines!</p>\n<p>Types:</p>\n<ul>\n<li><a href=\"./dc-machine.html\">DC Machine</a></li>\n<li><a href=\"./induction-machine.html\">Induction Machine</a></li>\n<li><a href=\"./synchronous-machine.html\">Synchronous Machine</a></li>\n<li><a href=\"./reluctance-machine.html\">Reluctance Machine</a></li>\n</ul>\n",
+      "title": "DC Machine",
+      "url": "https://desktopdyno.org/machines/dc-machine/",
+      "id": "https://desktopdyno.org/machines/dc-machine/",
+      "content_html": "<p>Foo barr</p>\n",
       "date_published": "2021-04-02T05:16:13.000Z",
       "date_modified": "2021-04-02T05:16:13.000Z",
       "authors": [

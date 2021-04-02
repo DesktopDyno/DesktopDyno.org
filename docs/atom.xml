@@ -6,7 +6,7 @@
   <author>
     <name>Nathan Petersen</name>
   </author>
-  <updated>2021-04-02T05:39:05.088Z</updated>
+  <updated>2021-04-02T05:40:49.104Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://desktopdyno.org/atom.xml"/>
   <link rel="alternate" href="https://desktopdyno.org/"/>
@@ -35,11 +35,11 @@
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
-    <title type="html">DC Machine</title>
-    <id>https://desktopdyno.org/machines/dc-machine/</id>
-    <link href="https://desktopdyno.org/machines/dc-machine/"/>
+    <title type="html">Induction Machine</title>
+    <id>https://desktopdyno.org/machines/induction-machine/</id>
+    <link href="https://desktopdyno.org/machines/induction-machine/"/>
     <updated>2021-04-02T05:16:13.000Z</updated>
-    <content type="html"><![CDATA[<p>Foo barr</p>
+    <content type="html"><![CDATA[<p>Foo bar baz</p>
 ]]></content>
     <author>
       <name>Nathan Petersen</name>
@@ -51,11 +51,18 @@
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
-    <title type="html">Induction Machine</title>
-    <id>https://desktopdyno.org/machines/induction-machine/</id>
-    <link href="https://desktopdyno.org/machines/induction-machine/"/>
+    <title type="html">Machines</title>
+    <id>https://desktopdyno.org/machines/</id>
+    <link href="https://desktopdyno.org/machines/"/>
     <updated>2021-04-02T05:16:13.000Z</updated>
-    <content type="html"><![CDATA[<p>Foo bar baz</p>
+    <content type="html"><![CDATA[<p>Electric Machines!</p>
+<p>Types:</p>
+<ul>
+<li><a href="./dc-machine.html">DC Machine</a></li>
+<li><a href="./induction-machine.html">Induction Machine</a></li>
+<li><a href="./synchronous-machine.html">Synchronous Machine</a></li>
+<li><a href="./reluctance-machine.html">Reluctance Machine</a></li>
+</ul>
 ]]></content>
     <author>
       <name>Nathan Petersen</name>
@@ -99,18 +106,11 @@
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
-    <title type="html">Machines</title>
-    <id>https://desktopdyno.org/machines/</id>
-    <link href="https://desktopdyno.org/machines/"/>
+    <title type="html">DC Machine</title>
+    <id>https://desktopdyno.org/machines/dc-machine/</id>
+    <link href="https://desktopdyno.org/machines/dc-machine/"/>
     <updated>2021-04-02T05:16:13.000Z</updated>
-    <content type="html"><![CDATA[<p>Electric Machines!</p>
-<p>Types:</p>
-<ul>
-<li><a href="./dc-machine.html">DC Machine</a></li>
-<li><a href="./induction-machine.html">Induction Machine</a></li>
-<li><a href="./synchronous-machine.html">Synchronous Machine</a></li>
-<li><a href="./reluctance-machine.html">Reluctance Machine</a></li>
-</ul>
+    <content type="html"><![CDATA[<p>Foo barr</p>
 ]]></content>
     <author>
       <name>Nathan Petersen</name>
