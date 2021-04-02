@@ -22,11 +22,13 @@ module.exports = config({
     author: "Nathan Petersen",
     repo: "https://github.com/DesktopDyno/DesktopDyno.org",
     repoDisplay: false,
+    docsDir: "src",
+    docsBranch: "main",
 
+    darkmode: "auto-switch",
     themeColor: false,
 
     iconPrefix: 'fas fab fa-',
-
 
     blog: false,
 
@@ -37,9 +39,28 @@ module.exports = config({
       { text: "Guide", link: "/guide/" },
     ],
 
-    sidebar: [
-      "",
-    ],
+    sidebar: {
+      "/": [
+        {
+          title: "Guide",
+          collapsable: false,
+          children: [
+            ["/guide/", "Introduction"],
+          ]
+        },
+        {
+          title: "Machines",
+          collapsable: false,
+          children: [
+            ["/machines/", "Introduction"],
+            "/machines/dc-machine.md",
+            "/machines/induction-machine.md",
+            "/machines/synchronous-machine.md",
+            "/machines/reluctance-machine.md",
+          ]
+        }
+      ],
+    },
 
     comment: false,
 
@@ -52,6 +73,7 @@ module.exports = config({
 
     git: {
       timezone: "America/Chicago",
+      contributor: false,
     },
 
     mdEnhance: {
