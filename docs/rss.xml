@@ -6,26 +6,18 @@
     <link>https://desktopdyno.org/</link>
     <description>foo bar</description>
     <language>en-US</language>
-    <pubDate>Fri, 02 Apr 2021 03:47:30 GMT</pubDate>
-    <lastBuildDate>Fri, 02 Apr 2021 03:47:30 GMT</lastBuildDate>
+    <pubDate>Fri, 02 Apr 2021 03:54:08 GMT</pubDate>
+    <lastBuildDate>Fri, 02 Apr 2021 03:54:08 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>Copyright by Nathan Petersen</copyright>
     <item>
-      <title>Home</title>
-      <link>https://desktopdyno.org/</link>
-      <guid>https://desktopdyno.org/</guid>
-      <source url="https://desktopdyno.org/rss.xml">Home</source>
-      <content:encoded><![CDATA[<p>Welcome to the Desktop Dyno Project.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Project home</title>
-      <link>https://desktopdyno.org/home/</link>
-      <guid>https://desktopdyno.org/home/</guid>
-      <source url="https://desktopdyno.org/rss.xml">Project home</source>
-      <content:encoded><![CDATA[<p>This is an example of a normal homepage. You can place your main content here.</p>
-<p>For related descriptions of configuration items, please see <a href="https://vuepress-theme-hope.github.io/guide/layout/home/" target="_blank" rel="noopener noreferrer">Home Page Layout Configuration</a>.</p>
+      <title>Guide</title>
+      <link>https://desktopdyno.org/guide/</link>
+      <guid>https://desktopdyno.org/guide/</guid>
+      <source url="https://desktopdyno.org/rss.xml">Guide</source>
+      <pubDate>Fri, 02 Apr 2021 03:48:18 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Hello</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -33,16 +25,28 @@
       <link>https://desktopdyno.org/intro/</link>
       <guid>https://desktopdyno.org/intro/</guid>
       <source url="https://desktopdyno.org/rss.xml">Intro Page</source>
+      <pubDate>Fri, 02 Apr 2021 03:48:18 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="intro-page"> Intro Page</h1>
 <p>Place your introducation and profile here.</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Guide</title>
-      <link>https://desktopdyno.org/guide/</link>
-      <guid>https://desktopdyno.org/guide/</guid>
-      <source url="https://desktopdyno.org/rss.xml">Guide</source>
-      <content:encoded><![CDATA[<p>Hello</p>
+      <title>Project home</title>
+      <link>https://desktopdyno.org/home/</link>
+      <guid>https://desktopdyno.org/home/</guid>
+      <source url="https://desktopdyno.org/rss.xml">Project home</source>
+      <pubDate>Fri, 02 Apr 2021 03:48:18 GMT</pubDate>
+      <content:encoded><![CDATA[<p>This is an example of a normal homepage. You can place your main content here.</p>
+<p>For related descriptions of configuration items, please see <a href="https://vuepress-theme-hope.github.io/guide/layout/home/" target="_blank" rel="noopener noreferrer">Home Page Layout Configuration</a>.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>https://desktopdyno.org/</link>
+      <guid>https://desktopdyno.org/</guid>
+      <source url="https://desktopdyno.org/rss.xml">Home</source>
+      <pubDate>Fri, 02 Apr 2021 03:48:18 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Welcome to the Desktop Dyno Project.</p>
 ]]></content:encoded>
     </item>
   </channel>

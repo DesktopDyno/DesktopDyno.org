@@ -9,24 +9,12 @@
   },
   "items": [
     {
-      "title": "Home",
-      "url": "https://desktopdyno.org/",
-      "id": "https://desktopdyno.org/",
-      "content_html": "<p>Welcome to the Desktop Dyno Project.</p>\n",
-      "date_modified": "2021-04-02T03:47:45.937Z",
-      "authors": [
-        {
-          "name": "Nathan Petersen"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "title": "Project home",
-      "url": "https://desktopdyno.org/home/",
-      "id": "https://desktopdyno.org/home/",
-      "content_html": "<p>This is an example of a normal homepage. You can place your main content here.</p>\n<p>For related descriptions of configuration items, please see <a href=\"https://vuepress-theme-hope.github.io/guide/layout/home/\" target=\"_blank\" rel=\"noopener noreferrer\">Home Page Layout Configuration</a>.</p>\n",
-      "date_modified": "2021-04-02T03:47:45.938Z",
+      "title": "Guide",
+      "url": "https://desktopdyno.org/guide/",
+      "id": "https://desktopdyno.org/guide/",
+      "content_html": "<p>Hello</p>\n",
+      "date_published": "2021-04-02T03:48:18.000Z",
+      "date_modified": "2021-04-02T03:48:18.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"
@@ -39,7 +27,8 @@
       "url": "https://desktopdyno.org/intro/",
       "id": "https://desktopdyno.org/intro/",
       "content_html": "<h1 id=\"intro-page\"> Intro Page</h1>\n<p>Place your introducation and profile here.</p>\n",
-      "date_modified": "2021-04-02T03:47:45.951Z",
+      "date_published": "2021-04-02T03:48:18.000Z",
+      "date_modified": "2021-04-02T03:48:18.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"
@@ -48,11 +37,26 @@
       "tags": []
     },
     {
-      "title": "Guide",
-      "url": "https://desktopdyno.org/guide/",
-      "id": "https://desktopdyno.org/guide/",
-      "content_html": "<p>Hello</p>\n",
-      "date_modified": "2021-04-02T03:47:45.951Z",
+      "title": "Project home",
+      "url": "https://desktopdyno.org/home/",
+      "id": "https://desktopdyno.org/home/",
+      "content_html": "<p>This is an example of a normal homepage. You can place your main content here.</p>\n<p>For related descriptions of configuration items, please see <a href=\"https://vuepress-theme-hope.github.io/guide/layout/home/\" target=\"_blank\" rel=\"noopener noreferrer\">Home Page Layout Configuration</a>.</p>\n",
+      "date_published": "2021-04-02T03:48:18.000Z",
+      "date_modified": "2021-04-02T03:48:18.000Z",
+      "authors": [
+        {
+          "name": "Nathan Petersen"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "Home",
+      "url": "https://desktopdyno.org/",
+      "id": "https://desktopdyno.org/",
+      "content_html": "<p>Welcome to the Desktop Dyno Project.</p>\n",
+      "date_published": "2021-04-02T03:48:18.000Z",
+      "date_modified": "2021-04-02T03:48:18.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"
