@@ -23,10 +23,38 @@
       "tags": []
     },
     {
-      "title": "Induction Machine",
-      "url": "https://desktopdyno.org/machines/induction-machine/",
-      "id": "https://desktopdyno.org/machines/induction-machine/",
-      "content_html": "<p>Foo bar baz</p>\n",
+      "title": "Synchronous Machine",
+      "url": "https://desktopdyno.org/machines/synchronous-machine/",
+      "id": "https://desktopdyno.org/machines/synchronous-machine/",
+      "content_html": "<p>foo bar baz</p>\n",
+      "date_published": "2021-04-02T05:16:13.000Z",
+      "date_modified": "2021-04-02T05:16:13.000Z",
+      "authors": [
+        {
+          "name": "Nathan Petersen"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "Home",
+      "url": "https://desktopdyno.org/",
+      "id": "https://desktopdyno.org/",
+      "content_html": "<p>Welcome to the Desktop Dyno Project.</p>\n",
+      "date_published": "2021-04-02T03:48:18.000Z",
+      "date_modified": "2021-04-02T21:07:46.000Z",
+      "authors": [
+        {
+          "name": "Nathan Petersen"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "Reluctance Machine",
+      "url": "https://desktopdyno.org/machines/reluctance-machine/",
+      "id": "https://desktopdyno.org/machines/reluctance-machine/",
+      "content_html": "<p>foo bar</p>\n",
       "date_published": "2021-04-02T05:16:13.000Z",
       "date_modified": "2021-04-02T05:16:13.000Z",
       "authors": [
@@ -51,34 +79,6 @@
       "tags": []
     },
     {
-      "title": "Reluctance Machine",
-      "url": "https://desktopdyno.org/machines/reluctance-machine/",
-      "id": "https://desktopdyno.org/machines/reluctance-machine/",
-      "content_html": "<p>foo bar</p>\n",
-      "date_published": "2021-04-02T05:16:13.000Z",
-      "date_modified": "2021-04-02T05:16:13.000Z",
-      "authors": [
-        {
-          "name": "Nathan Petersen"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "title": "Synchronous Machine",
-      "url": "https://desktopdyno.org/machines/synchronous-machine/",
-      "id": "https://desktopdyno.org/machines/synchronous-machine/",
-      "content_html": "<p>foo bar baz</p>\n",
-      "date_published": "2021-04-02T05:16:13.000Z",
-      "date_modified": "2021-04-02T05:16:13.000Z",
-      "authors": [
-        {
-          "name": "Nathan Petersen"
-        }
-      ],
-      "tags": []
-    },
-    {
       "title": "DC Machine",
       "url": "https://desktopdyno.org/machines/dc-machine/",
       "id": "https://desktopdyno.org/machines/dc-machine/",
@@ -93,12 +93,12 @@
       "tags": []
     },
     {
-      "title": "Home",
-      "url": "https://desktopdyno.org/",
-      "id": "https://desktopdyno.org/",
-      "content_html": "<p>Welcome to the Desktop Dyno Project.</p>\n",
-      "date_published": "2021-04-02T03:48:18.000Z",
-      "date_modified": "2021-04-02T03:48:18.000Z",
+      "title": "Induction Machine",
+      "url": "https://desktopdyno.org/machines/induction-machine/",
+      "id": "https://desktopdyno.org/machines/induction-machine/",
+      "content_html": "<p>Foo bar baz</p>\n",
+      "date_published": "2021-04-02T05:16:13.000Z",
+      "date_modified": "2021-04-02T05:16:13.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"
