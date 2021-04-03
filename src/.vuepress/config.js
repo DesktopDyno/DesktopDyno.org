@@ -37,30 +37,31 @@ module.exports = config({
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
-      { text: "Machines", link: "/machines/" },
+      { text: "Hardware", link: "/hardware/" },
     ],
 
     sidebar: {
-      "/": [
+      "/guide/": [
         {
           title: "Guide",
           collapsable: false,
           children: [
-            ["/guide/", "Introduction"],
-          ]
+            ["/guide/", "Guide Introduction"],
+            {
+              title: "Machines",
+              prefix: "/guide",
+              collapsable: false,
+              children: [
+                ["/machines/", "Machine Introduction"],
+                "/machines/dc-machine.md",
+                "/machines/induction-machine.md",
+                "/machines/synchronous-machine.md",
+                "/machines/reluctance-machine.md",
+              ]
+            }
+          ],
         },
-        {
-          title: "Machines",
-          collapsable: false,
-          children: [
-            ["/machines/", "Introduction"],
-            "/machines/dc-machine.md",
-            "/machines/induction-machine.md",
-            "/machines/synchronous-machine.md",
-            "/machines/reluctance-machine.md",
-          ]
-        }
-      ],
+      ]
     },
 
     comment: false,
