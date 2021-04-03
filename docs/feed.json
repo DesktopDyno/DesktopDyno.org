@@ -9,12 +9,12 @@
   },
   "items": [
     {
-      "title": "Guide",
-      "url": "https://desktopdyno.org/guide/",
-      "id": "https://desktopdyno.org/guide/",
-      "content_html": "<p>This is the guide to Desktop Dyno.</p>\n<div><p>Warning</p>\n<p>Ensure you read the fine print!</p>\n</div>\n<p>First, you must understand the power of <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.89883em;vertical-align:-0.2155em;\"></span><span><span>L</span><span style=\"margin-right:-0.36em;\"></span><span><span><span style=\"height:0.68333em;\"><span style=\"top:-2.904999em;\"><span style=\"height:2.7em;\"></span><span><span>A</span></span></span></span></span></span><span style=\"margin-right:-0.15em;\"></span><span><span>T</span><span style=\"margin-right:-0.1667em;\"></span><span><span><span style=\"height:0.46782999999999997em;\"><span style=\"top:-2.7845em;\"><span style=\"height:3em;\"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style=\"height:0.2155em;\"><span></span></span></span></span><span style=\"margin-right:-0.125em;\"></span><span>X</span></span></span></span></span></span> to study motors.</p>\n",
-      "date_published": "2021-04-02T03:48:18.000Z",
-      "date_modified": "2021-04-02T05:16:13.000Z",
+      "title": "DC Machine",
+      "url": "https://desktopdyno.org/guide/machines/dc-machine/",
+      "id": "https://desktopdyno.org/guide/machines/dc-machine/",
+      "content_html": "<p>Foo barr</p>\n",
+      "date_published": "2021-04-03T13:10:02.000Z",
+      "date_modified": "2021-04-03T13:10:02.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"
@@ -24,10 +24,24 @@
     },
     {
       "title": "Synchronous Machine",
-      "url": "https://desktopdyno.org/machines/synchronous-machine/",
-      "id": "https://desktopdyno.org/machines/synchronous-machine/",
+      "url": "https://desktopdyno.org/guide/machines/synchronous-machine/",
+      "id": "https://desktopdyno.org/guide/machines/synchronous-machine/",
       "content_html": "<p>foo bar baz</p>\n",
-      "date_published": "2021-04-02T05:16:13.000Z",
+      "date_published": "2021-04-03T13:10:02.000Z",
+      "date_modified": "2021-04-03T13:10:02.000Z",
+      "authors": [
+        {
+          "name": "Nathan Petersen"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "Guide",
+      "url": "https://desktopdyno.org/guide/",
+      "id": "https://desktopdyno.org/guide/",
+      "content_html": "<p>This is the guide to Desktop Dyno.</p>\n<div><p>Warning</p>\n<p>Ensure you read the fine print!</p>\n</div>\n<p>First, you must understand the power of <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.89883em;vertical-align:-0.2155em;\"></span><span><span>L</span><span style=\"margin-right:-0.36em;\"></span><span><span><span style=\"height:0.68333em;\"><span style=\"top:-2.904999em;\"><span style=\"height:2.7em;\"></span><span><span>A</span></span></span></span></span></span><span style=\"margin-right:-0.15em;\"></span><span><span>T</span><span style=\"margin-right:-0.1667em;\"></span><span><span><span style=\"height:0.46782999999999997em;\"><span style=\"top:-2.7845em;\"><span style=\"height:3em;\"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style=\"height:0.2155em;\"><span></span></span></span></span><span style=\"margin-right:-0.125em;\"></span><span>X</span></span></span></span></span></span> to study motors.</p>\n",
+      "date_published": "2021-04-02T03:48:18.000Z",
       "date_modified": "2021-04-02T05:16:13.000Z",
       "authors": [
         {
@@ -51,12 +65,12 @@
       "tags": []
     },
     {
-      "title": "Reluctance Machine",
-      "url": "https://desktopdyno.org/machines/reluctance-machine/",
-      "id": "https://desktopdyno.org/machines/reluctance-machine/",
-      "content_html": "<p>foo bar</p>\n",
-      "date_published": "2021-04-02T05:16:13.000Z",
-      "date_modified": "2021-04-02T05:16:13.000Z",
+      "title": "Hardware",
+      "url": "https://desktopdyno.org/hardware/",
+      "id": "https://desktopdyno.org/hardware/",
+      "content_html": "<p>A section all about various real hardware:</p>\n<ul>\n<li>Dynos (custom designed, detailed articles about building, designing, understanding them)</li>\n<li>Motors (tear down real motors on the market, characterize them, run them)</li>\n<li>Drives (tear downs, using them)</li>\n<li>Sensors (tear downs, using them)</li>\n</ul>\n",
+      "date_published": "2021-04-03T13:10:02.000Z",
+      "date_modified": "2021-04-03T13:10:02.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"
@@ -66,11 +80,11 @@
     },
     {
       "title": "Machines",
-      "url": "https://desktopdyno.org/machines/",
-      "id": "https://desktopdyno.org/machines/",
+      "url": "https://desktopdyno.org/guide/machines/",
+      "id": "https://desktopdyno.org/guide/machines/",
       "content_html": "<p>Electric Machines!</p>\n<p>Types:</p>\n<ul>\n<li><a href=\"./dc-machine.html\">DC Machine</a></li>\n<li><a href=\"./induction-machine.html\">Induction Machine</a></li>\n<li><a href=\"./synchronous-machine.html\">Synchronous Machine</a></li>\n<li><a href=\"./reluctance-machine.html\">Reluctance Machine</a></li>\n</ul>\n",
-      "date_published": "2021-04-02T05:16:13.000Z",
-      "date_modified": "2021-04-02T05:16:13.000Z",
+      "date_published": "2021-04-03T13:10:02.000Z",
+      "date_modified": "2021-04-03T13:10:02.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"
@@ -79,12 +93,12 @@
       "tags": []
     },
     {
-      "title": "DC Machine",
-      "url": "https://desktopdyno.org/machines/dc-machine/",
-      "id": "https://desktopdyno.org/machines/dc-machine/",
-      "content_html": "<p>Foo barr</p>\n",
-      "date_published": "2021-04-02T05:16:13.000Z",
-      "date_modified": "2021-04-02T05:16:13.000Z",
+      "title": "Reluctance Machine",
+      "url": "https://desktopdyno.org/guide/machines/reluctance-machine/",
+      "id": "https://desktopdyno.org/guide/machines/reluctance-machine/",
+      "content_html": "<p>foo bar</p>\n",
+      "date_published": "2021-04-03T13:10:02.000Z",
+      "date_modified": "2021-04-03T13:10:02.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"
@@ -94,11 +108,11 @@
     },
     {
       "title": "Induction Machine",
-      "url": "https://desktopdyno.org/machines/induction-machine/",
-      "id": "https://desktopdyno.org/machines/induction-machine/",
+      "url": "https://desktopdyno.org/guide/machines/induction-machine/",
+      "id": "https://desktopdyno.org/guide/machines/induction-machine/",
       "content_html": "<p>Foo bar baz</p>\n",
-      "date_published": "2021-04-02T05:16:13.000Z",
-      "date_modified": "2021-04-02T05:16:13.000Z",
+      "date_published": "2021-04-03T13:10:02.000Z",
+      "date_modified": "2021-04-03T13:10:02.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"

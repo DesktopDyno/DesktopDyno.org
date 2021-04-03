@@ -6,7 +6,7 @@
   <author>
     <name>Nathan Petersen</name>
   </author>
-  <updated>2021-04-02T21:07:59.223Z</updated>
+  <updated>2021-04-03T13:10:10.114Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://desktopdyno.org/atom.xml"/>
   <link rel="alternate" href="https://desktopdyno.org/"/>
@@ -14,6 +14,38 @@
   <contributor>
     <name>Nathan Petersen</name>
   </contributor>
+  <entry>
+    <title type="html">DC Machine</title>
+    <id>https://desktopdyno.org/guide/machines/dc-machine/</id>
+    <link href="https://desktopdyno.org/guide/machines/dc-machine/"/>
+    <updated>2021-04-03T13:10:02.000Z</updated>
+    <content type="html"><![CDATA[<p>Foo barr</p>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-04-03T13:10:02.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
+    <title type="html">Synchronous Machine</title>
+    <id>https://desktopdyno.org/guide/machines/synchronous-machine/</id>
+    <link href="https://desktopdyno.org/guide/machines/synchronous-machine/"/>
+    <updated>2021-04-03T13:10:02.000Z</updated>
+    <content type="html"><![CDATA[<p>foo bar baz</p>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-04-03T13:10:02.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
   <entry>
     <title type="html">Guide</title>
     <id>https://desktopdyno.org/guide/</id>
@@ -35,22 +67,6 @@
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
-    <title type="html">Synchronous Machine</title>
-    <id>https://desktopdyno.org/machines/synchronous-machine/</id>
-    <link href="https://desktopdyno.org/machines/synchronous-machine/"/>
-    <updated>2021-04-02T05:16:13.000Z</updated>
-    <content type="html"><![CDATA[<p>foo bar baz</p>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-04-02T05:16:13.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
     <title type="html">Home</title>
     <id>https://desktopdyno.org/</id>
     <link href="https://desktopdyno.org/"/>
@@ -67,11 +83,17 @@
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
-    <title type="html">Reluctance Machine</title>
-    <id>https://desktopdyno.org/machines/reluctance-machine/</id>
-    <link href="https://desktopdyno.org/machines/reluctance-machine/"/>
-    <updated>2021-04-02T05:16:13.000Z</updated>
-    <content type="html"><![CDATA[<p>foo bar</p>
+    <title type="html">Hardware</title>
+    <id>https://desktopdyno.org/hardware/</id>
+    <link href="https://desktopdyno.org/hardware/"/>
+    <updated>2021-04-03T13:10:02.000Z</updated>
+    <content type="html"><![CDATA[<p>A section all about various real hardware:</p>
+<ul>
+<li>Dynos (custom designed, detailed articles about building, designing, understanding them)</li>
+<li>Motors (tear down real motors on the market, characterize them, run them)</li>
+<li>Drives (tear downs, using them)</li>
+<li>Sensors (tear downs, using them)</li>
+</ul>
 ]]></content>
     <author>
       <name>Nathan Petersen</name>
@@ -79,14 +101,14 @@
     <contributor>
       <name>Nathan Petersen</name>
     </contributor>
-    <published>2021-04-02T05:16:13.000Z</published>
+    <published>2021-04-03T13:10:02.000Z</published>
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
     <title type="html">Machines</title>
-    <id>https://desktopdyno.org/machines/</id>
-    <link href="https://desktopdyno.org/machines/"/>
-    <updated>2021-04-02T05:16:13.000Z</updated>
+    <id>https://desktopdyno.org/guide/machines/</id>
+    <link href="https://desktopdyno.org/guide/machines/"/>
+    <updated>2021-04-03T13:10:02.000Z</updated>
     <content type="html"><![CDATA[<p>Electric Machines!</p>
 <p>Types:</p>
 <ul>
@@ -102,15 +124,15 @@
     <contributor>
       <name>Nathan Petersen</name>
     </contributor>
-    <published>2021-04-02T05:16:13.000Z</published>
+    <published>2021-04-03T13:10:02.000Z</published>
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
-    <title type="html">DC Machine</title>
-    <id>https://desktopdyno.org/machines/dc-machine/</id>
-    <link href="https://desktopdyno.org/machines/dc-machine/"/>
-    <updated>2021-04-02T05:16:13.000Z</updated>
-    <content type="html"><![CDATA[<p>Foo barr</p>
+    <title type="html">Reluctance Machine</title>
+    <id>https://desktopdyno.org/guide/machines/reluctance-machine/</id>
+    <link href="https://desktopdyno.org/guide/machines/reluctance-machine/"/>
+    <updated>2021-04-03T13:10:02.000Z</updated>
+    <content type="html"><![CDATA[<p>foo bar</p>
 ]]></content>
     <author>
       <name>Nathan Petersen</name>
@@ -118,14 +140,14 @@
     <contributor>
       <name>Nathan Petersen</name>
     </contributor>
-    <published>2021-04-02T05:16:13.000Z</published>
+    <published>2021-04-03T13:10:02.000Z</published>
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
     <title type="html">Induction Machine</title>
-    <id>https://desktopdyno.org/machines/induction-machine/</id>
-    <link href="https://desktopdyno.org/machines/induction-machine/"/>
-    <updated>2021-04-02T05:16:13.000Z</updated>
+    <id>https://desktopdyno.org/guide/machines/induction-machine/</id>
+    <link href="https://desktopdyno.org/guide/machines/induction-machine/"/>
+    <updated>2021-04-03T13:10:02.000Z</updated>
     <content type="html"><![CDATA[<p>Foo bar baz</p>
 ]]></content>
     <author>
@@ -134,7 +156,7 @@
     <contributor>
       <name>Nathan Petersen</name>
     </contributor>
-    <published>2021-04-02T05:16:13.000Z</published>
+    <published>2021-04-03T13:10:02.000Z</published>
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
 </feed>
