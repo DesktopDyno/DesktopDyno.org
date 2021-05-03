@@ -32,12 +32,13 @@ module.exports = config({
 
     blog: false,
 
-    pageInfo: ['author', 'time', 'category', 'tag', 'reading-time', 'word'],
+    pageInfo: ['category', 'tag', 'reading-time', 'word'],
 
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
       { text: "Hardware", link: "/hardware/" },
+      { text: "Dyno", link: "/dyno/" },
     ],
 
     sidebar: {
