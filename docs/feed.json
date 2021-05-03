@@ -12,9 +12,9 @@
       "title": "DC Machine",
       "url": "https://desktopdyno.org/guide/machines/dc-machine/",
       "id": "https://desktopdyno.org/guide/machines/dc-machine/",
-      "content_html": "<p>Foo barr</p>\n",
+      "content_html": "<p>The DC machine performs electromechanical energy conversion using <strong>direct current (DC)</strong>, as opposed to alternating current (AC). DC motors are easy to operate and control since a simple battery can be used as the power source.</p>\n<p>Typically, there are two active parts of the DC machine: the <strong>rotor</strong> which rotates with the shaft, and the <strong>stator</strong> which is stationary.</p>\n<p>DC machines have two input terminals called the <strong>positive</strong> and <strong>negative</strong> input. In motoring operation, when a positive voltage is applied across the terminals, a current flows in the machine and the shaft spins. Conversely, in generating operation, when the shaft is rotated via an external mover, a voltage appears at the terminals of the machine. The voltage that appears is called the <strong>back-EMF</strong> (back electromotive force) and is directly proportional to the shaft speed. The machine creates torque when a current flows in the winding.</p>\n<h2 id=\"analysis\"> Analysis</h2>\n<p>Typically, the governing equations are divided into: 1) electrical, 2) mechanical. These two equations are coupled via the machine's current and rotary speed.</p>\n<p>In the following sections, parameters with a subscript &quot;p&quot; indicate <em>physical</em> values -- e.g. <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span><span style=\"margin-right:0.00773em;\">R</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> denotes the physical stator resistance value.</p>\n<h3 id=\"electrical\"> Electrical</h3>\n<p>The following equation relates the applied voltage <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span style=\"margin-right:0.03588em;\">v</span><span>(</span><span>t</span><span>)</span></span></span></span> to the resulting current <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span>i</span><span>(</span><span>t</span><span>)</span></span></span></span>, where <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span><span style=\"margin-right:0.00773em;\">R</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> is the winding resistance and <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span><span>L</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> is the winding inductance. Due to the winding inductance, a change is applied voltage <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span style=\"margin-right:0.03588em;\">v</span><span>(</span><span>t</span><span>)</span></span></span></span> does not create an instantaneous change in current <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span>i</span><span>(</span><span>t</span><span>)</span></span></span></span>; the winding has <em>dynamics</em>.</p>\n<p>The back-EMF appears in the electrical equations as <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span><span style=\"margin-right:0.03148em;\">k</span><span><span><span><span style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style=\"height:0.15em;\"><span></span></span></span></span></span></span><span style=\"margin-right:0.03588em;\">ω</span><span>(</span><span>t</span><span>)</span></span></span></span> where <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span><span style=\"margin-right:0.03148em;\">k</span><span><span><span><span style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> is the <em>back-EMF constant</em> and depends on the machine design, and <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span style=\"margin-right:0.03588em;\">ω</span><span>(</span><span>t</span><span>)</span></span></span></span> is the shaft rotational speed. Notice that at zero speed, the differential equation matches that of an RL (resistive-inductive) load.</p>\n<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:2.113em;vertical-align:-0.686em;\"></span><span><span>L</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span><span></span><span><span><span><span style=\"height:1.427em;\"><span style=\"top:-2.314em;\"><span style=\"height:3em;\"></span><span><span><span>dt</span></span></span></span><span style=\"top:-3.23em;\"><span style=\"height:3em;\"></span><span style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span style=\"height:3em;\"></span><span><span><span>d</span></span><span>i</span><span>(</span><span>t</span><span>)</span></span></span></span><span>​</span></span><span><span style=\"height:0.686em;\"><span></span></span></span></span></span><span></span></span><span style=\"margin-right:0.2777777777777778em;\"></span><span>=</span><span style=\"margin-right:0.2777777777777778em;\"></span></span><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span style=\"margin-right:0.03588em;\">v</span><span>(</span><span>t</span><span>)</span><span style=\"margin-right:0.2222222222222222em;\"></span><span>−</span><span style=\"margin-right:0.2222222222222222em;\"></span></span><span><span style=\"height:1.036108em;vertical-align:-0.286108em;\"></span><span><span style=\"margin-right:0.00773em;\">R</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span>i</span><span>(</span><span>t</span><span>)</span><span style=\"margin-right:0.2222222222222222em;\"></span><span>−</span><span style=\"margin-right:0.2222222222222222em;\"></span></span><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span><span style=\"margin-right:0.03148em;\">k</span><span><span><span><span style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style=\"height:0.15em;\"><span></span></span></span></span></span></span><span style=\"margin-right:0.03588em;\">ω</span><span>(</span><span>t</span><span>)</span></span></span></span></span></p>\n<p>The DC machine electromagnetic torque <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span><span style=\"margin-right:0.13889em;\">T</span><span><span><span><span style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style=\"height:0.15em;\"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span></span></span></span> is proportional to the current <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span>i</span><span>(</span><span>t</span><span>)</span></span></span></span> as given by the following equation where <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.84444em;vertical-align:-0.15em;\"></span><span><span style=\"margin-right:0.03148em;\">k</span><span><span><span><span style=\"height:0.2805559999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> is the <em>torque constant</em> and is determined by the machine design.</p>\n<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span><span style=\"margin-right:0.13889em;\">T</span><span><span><span><span style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style=\"height:0.15em;\"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span><span style=\"margin-right:0.2777777777777778em;\"></span><span>=</span><span style=\"margin-right:0.2777777777777778em;\"></span></span><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span><span style=\"margin-right:0.03148em;\">k</span><span><span><span><span style=\"height:0.2805559999999999em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style=\"height:0.15em;\"><span></span></span></span></span></span></span><span>i</span><span>(</span><span>t</span><span>)</span></span></span></span></span></p>\n<h3 id=\"mechanical\"> Mechanical</h3>\n<p>The developed electromagnetic torque then acts to rotate the rotor and shaft. The shaft has a certian inertia <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span><span style=\"margin-right:0.09618em;\">J</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.09618em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> value which determines the dynamics of the rotary motion. Typical machines also have damping and friction torques which act against the direction of motion -- the damping coefficient is <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span><span style=\"margin-right:0.05017em;\">B</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> and the friction value is <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.969438em;vertical-align:-0.286108em;\"></span><span><span style=\"margin-right:0.13889em;\">T</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>μ</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span>. The complete mechanical differential equation is given as follows:</p>\n<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:2.113em;vertical-align:-0.686em;\"></span><span><span style=\"margin-right:0.09618em;\">J</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.09618em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span><span></span><span><span><span><span style=\"height:1.427em;\"><span style=\"top:-2.314em;\"><span style=\"height:3em;\"></span><span><span><span>dt</span></span></span></span><span style=\"top:-3.23em;\"><span style=\"height:3em;\"></span><span style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span style=\"height:3em;\"></span><span><span><span>d</span></span><span style=\"margin-right:0.03588em;\">ω</span><span>(</span><span>t</span><span>)</span></span></span></span><span>​</span></span><span><span style=\"height:0.686em;\"><span></span></span></span></span></span><span></span></span><span style=\"margin-right:0.2777777777777778em;\"></span><span>=</span><span style=\"margin-right:0.2777777777777778em;\"></span></span><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span><span style=\"margin-right:0.13889em;\">T</span><span><span><span><span style=\"height:0.151392em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style=\"height:0.15em;\"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span><span style=\"margin-right:0.2222222222222222em;\"></span><span>−</span><span style=\"margin-right:0.2222222222222222em;\"></span></span><span><span style=\"height:1.036108em;vertical-align:-0.286108em;\"></span><span><span style=\"margin-right:0.05017em;\">B</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span style=\"margin-right:0.03588em;\">ω</span><span>(</span><span>t</span><span>)</span><span style=\"margin-right:0.2222222222222222em;\"></span><span>−</span><span style=\"margin-right:0.2222222222222222em;\"></span></span><span><span style=\"height:1.036108em;vertical-align:-0.286108em;\"></span><span><span style=\"margin-right:0.13889em;\">T</span><span><span><span><span style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span style=\"height:2.7em;\"></span><span><span>μ</span></span></span></span><span>​</span></span><span><span style=\"height:0.286108em;\"><span></span></span></span></span></span></span><span><span>sign</span></span><span>(</span><span style=\"margin-right:0.03588em;\">ω</span><span>(</span><span>t</span><span>))</span></span></span></span></span></p>\n<h3 id=\"block-diagram\"> Block Diagram</h3>\n<p>The differential equations discribed above can be represented in block diagram form as follows, where integrators are shown using the <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:1em;vertical-align:-0.25em;\"></span><span>1/</span><span>s</span></span></span></span> blocks.</p>\n<p>Notice the cross-coupling between the electrical and mechanical equations from both the electromagnetic torque and rotary speed.</p>\n<h2 id=\"history\"> History</h2>\n<p>The DC machine dates back to the early 1800s when the first electric motors came into the world.</p>\n",
       "date_published": "2021-04-03T13:10:02.000Z",
-      "date_modified": "2021-04-03T13:10:02.000Z",
+      "date_modified": "2021-05-03T23:38:01.000Z",
       "authors": [
         {
           "name": "Nathan Petersen"
@@ -23,66 +23,10 @@
       "tags": []
     },
     {
-      "title": "Synchronous Machine",
-      "url": "https://desktopdyno.org/guide/machines/synchronous-machine/",
-      "id": "https://desktopdyno.org/guide/machines/synchronous-machine/",
-      "content_html": "<p>foo bar baz</p>\n",
-      "date_published": "2021-04-03T13:10:02.000Z",
-      "date_modified": "2021-04-03T13:10:02.000Z",
-      "authors": [
-        {
-          "name": "Nathan Petersen"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "title": "Guide",
-      "url": "https://desktopdyno.org/guide/",
-      "id": "https://desktopdyno.org/guide/",
-      "content_html": "<p>This is the guide to Desktop Dyno.</p>\n<div><p>Warning</p>\n<p>Ensure you read the fine print!</p>\n</div>\n<p>First, you must understand the power of <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.89883em;vertical-align:-0.2155em;\"></span><span><span>L</span><span style=\"margin-right:-0.36em;\"></span><span><span><span style=\"height:0.68333em;\"><span style=\"top:-2.904999em;\"><span style=\"height:2.7em;\"></span><span><span>A</span></span></span></span></span></span><span style=\"margin-right:-0.15em;\"></span><span><span>T</span><span style=\"margin-right:-0.1667em;\"></span><span><span><span style=\"height:0.46782999999999997em;\"><span style=\"top:-2.7845em;\"><span style=\"height:3em;\"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style=\"height:0.2155em;\"><span></span></span></span></span><span style=\"margin-right:-0.125em;\"></span><span>X</span></span></span></span></span></span> to study motors.</p>\n",
-      "date_published": "2021-04-02T03:48:18.000Z",
-      "date_modified": "2021-04-02T05:16:13.000Z",
-      "authors": [
-        {
-          "name": "Nathan Petersen"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "title": "Home",
-      "url": "https://desktopdyno.org/",
-      "id": "https://desktopdyno.org/",
-      "content_html": "<p>Welcome to the Desktop Dyno Project.</p>\n",
-      "date_published": "2021-04-02T03:48:18.000Z",
-      "date_modified": "2021-04-02T21:07:46.000Z",
-      "authors": [
-        {
-          "name": "Nathan Petersen"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "title": "Hardware",
-      "url": "https://desktopdyno.org/hardware/",
-      "id": "https://desktopdyno.org/hardware/",
-      "content_html": "<p>A section all about various real hardware:</p>\n<ul>\n<li>Dynos (custom designed, detailed articles about building, designing, understanding them)</li>\n<li>Motors (tear down real motors on the market, characterize them, run them)</li>\n<li>Drives (tear downs, using them)</li>\n<li>Sensors (tear downs, using them)</li>\n</ul>\n",
-      "date_published": "2021-04-03T13:10:02.000Z",
-      "date_modified": "2021-04-03T13:10:02.000Z",
-      "authors": [
-        {
-          "name": "Nathan Petersen"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "title": "Machines",
-      "url": "https://desktopdyno.org/guide/machines/",
-      "id": "https://desktopdyno.org/guide/machines/",
-      "content_html": "<p>Electric Machines!</p>\n<p>Types:</p>\n<ul>\n<li><a href=\"./dc-machine.html\">DC Machine</a></li>\n<li><a href=\"./induction-machine.html\">Induction Machine</a></li>\n<li><a href=\"./synchronous-machine.html\">Synchronous Machine</a></li>\n<li><a href=\"./reluctance-machine.html\">Reluctance Machine</a></li>\n</ul>\n",
+      "title": "Induction Machine",
+      "url": "https://desktopdyno.org/guide/machines/induction-machine/",
+      "id": "https://desktopdyno.org/guide/machines/induction-machine/",
+      "content_html": "<p>Foo bar baz</p>\n",
       "date_published": "2021-04-03T13:10:02.000Z",
       "date_modified": "2021-04-03T13:10:02.000Z",
       "authors": [
@@ -107,10 +51,66 @@
       "tags": []
     },
     {
-      "title": "Induction Machine",
-      "url": "https://desktopdyno.org/guide/machines/induction-machine/",
-      "id": "https://desktopdyno.org/guide/machines/induction-machine/",
-      "content_html": "<p>Foo bar baz</p>\n",
+      "title": "Guide",
+      "url": "https://desktopdyno.org/guide/",
+      "id": "https://desktopdyno.org/guide/",
+      "content_html": "<p>This is the guide to Desktop Dyno.</p>\n<div><p>Warning</p>\n<p>Ensure you read the fine print!</p>\n</div>\n<p>First, you must understand the power of <span><span><i>Not supported content</i></span><span aria-hidden=\"true\"><span><span style=\"height:0.89883em;vertical-align:-0.2155em;\"></span><span><span>L</span><span style=\"margin-right:-0.36em;\"></span><span><span><span style=\"height:0.68333em;\"><span style=\"top:-2.904999em;\"><span style=\"height:2.7em;\"></span><span><span>A</span></span></span></span></span></span><span style=\"margin-right:-0.15em;\"></span><span><span>T</span><span style=\"margin-right:-0.1667em;\"></span><span><span><span style=\"height:0.46782999999999997em;\"><span style=\"top:-2.7845em;\"><span style=\"height:3em;\"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style=\"height:0.2155em;\"><span></span></span></span></span><span style=\"margin-right:-0.125em;\"></span><span>X</span></span></span></span></span></span> to study motors.</p>\n",
+      "date_published": "2021-04-02T03:48:18.000Z",
+      "date_modified": "2021-04-02T05:16:13.000Z",
+      "authors": [
+        {
+          "name": "Nathan Petersen"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "Hardware",
+      "url": "https://desktopdyno.org/hardware/",
+      "id": "https://desktopdyno.org/hardware/",
+      "content_html": "<p>A section all about various real hardware:</p>\n<ul>\n<li>Dynos (custom designed, detailed articles about building, designing, understanding them)</li>\n<li>Motors (tear down real motors on the market, characterize them, run them)</li>\n<li>Drives (tear downs, using them)</li>\n<li>Sensors (tear downs, using them)</li>\n</ul>\n",
+      "date_published": "2021-04-03T13:10:02.000Z",
+      "date_modified": "2021-04-03T13:10:02.000Z",
+      "authors": [
+        {
+          "name": "Nathan Petersen"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "Home",
+      "url": "https://desktopdyno.org/",
+      "id": "https://desktopdyno.org/",
+      "content_html": "<p>Welcome to the Desktop Dyno Project.</p>\n",
+      "date_published": "2021-04-02T03:48:18.000Z",
+      "date_modified": "2021-04-02T21:07:46.000Z",
+      "authors": [
+        {
+          "name": "Nathan Petersen"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "Machines",
+      "url": "https://desktopdyno.org/guide/machines/",
+      "id": "https://desktopdyno.org/guide/machines/",
+      "content_html": "<p>Electric Machines!</p>\n<p>Types:</p>\n<ul>\n<li><a href=\"./dc-machine.html\">DC Machine</a></li>\n<li><a href=\"./induction-machine.html\">Induction Machine</a></li>\n<li><a href=\"./synchronous-machine.html\">Synchronous Machine</a></li>\n<li><a href=\"./reluctance-machine.html\">Reluctance Machine</a></li>\n</ul>\n",
+      "date_published": "2021-04-03T13:10:02.000Z",
+      "date_modified": "2021-04-03T13:10:02.000Z",
+      "authors": [
+        {
+          "name": "Nathan Petersen"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "Synchronous Machine",
+      "url": "https://desktopdyno.org/guide/machines/synchronous-machine/",
+      "id": "https://desktopdyno.org/guide/machines/synchronous-machine/",
+      "content_html": "<p>foo bar baz</p>\n",
       "date_published": "2021-04-03T13:10:02.000Z",
       "date_modified": "2021-04-03T13:10:02.000Z",
       "authors": [
