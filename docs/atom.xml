@@ -6,7 +6,7 @@
   <author>
     <name>Nathan Petersen</name>
   </author>
-  <updated>2021-05-03T23:38:07.906Z</updated>
+  <updated>2021-05-13T14:06:17.115Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://desktopdyno.org/atom.xml"/>
   <link rel="alternate" href="https://desktopdyno.org/"/>
@@ -82,6 +82,61 @@
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
+    <title type="html">Machines</title>
+    <id>https://desktopdyno.org/guide/machines/</id>
+    <link href="https://desktopdyno.org/guide/machines/"/>
+    <updated>2021-04-03T13:10:02.000Z</updated>
+    <content type="html"><![CDATA[<p>Electric Machines!</p>
+<p>Types:</p>
+<ul>
+<li><a href="./dc-machine.html">DC Machine</a></li>
+<li><a href="./induction-machine.html">Induction Machine</a></li>
+<li><a href="./synchronous-machine.html">Synchronous Machine</a></li>
+<li><a href="./reluctance-machine.html">Reluctance Machine</a></li>
+</ul>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-04-03T13:10:02.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
+    <title type="html">Home</title>
+    <id>https://desktopdyno.org/</id>
+    <link href="https://desktopdyno.org/"/>
+    <updated>2021-05-13T14:06:07.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to the Desktop Dyno Project.</p>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-04-02T03:48:18.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
+    <title type="html">Synchronous Machine</title>
+    <id>https://desktopdyno.org/guide/machines/synchronous-machine/</id>
+    <link href="https://desktopdyno.org/guide/machines/synchronous-machine/"/>
+    <updated>2021-04-03T13:10:02.000Z</updated>
+    <content type="html"><![CDATA[<p>foo bar baz</p>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-04-03T13:10:02.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
     <title type="html">Guide</title>
     <id>https://desktopdyno.org/guide/</id>
     <link href="https://desktopdyno.org/guide/"/>
@@ -113,61 +168,6 @@
 <li>Drives (tear downs, using them)</li>
 <li>Sensors (tear downs, using them)</li>
 </ul>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-04-03T13:10:02.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
-    <title type="html">Home</title>
-    <id>https://desktopdyno.org/</id>
-    <link href="https://desktopdyno.org/"/>
-    <updated>2021-04-02T21:07:46.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to the Desktop Dyno Project.</p>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-04-02T03:48:18.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
-    <title type="html">Machines</title>
-    <id>https://desktopdyno.org/guide/machines/</id>
-    <link href="https://desktopdyno.org/guide/machines/"/>
-    <updated>2021-04-03T13:10:02.000Z</updated>
-    <content type="html"><![CDATA[<p>Electric Machines!</p>
-<p>Types:</p>
-<ul>
-<li><a href="./dc-machine.html">DC Machine</a></li>
-<li><a href="./induction-machine.html">Induction Machine</a></li>
-<li><a href="./synchronous-machine.html">Synchronous Machine</a></li>
-<li><a href="./reluctance-machine.html">Reluctance Machine</a></li>
-</ul>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-04-03T13:10:02.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
-    <title type="html">Synchronous Machine</title>
-    <id>https://desktopdyno.org/guide/machines/synchronous-machine/</id>
-    <link href="https://desktopdyno.org/guide/machines/synchronous-machine/"/>
-    <updated>2021-04-03T13:10:02.000Z</updated>
-    <content type="html"><![CDATA[<p>foo bar baz</p>
 ]]></content>
     <author>
       <name>Nathan Petersen</name>

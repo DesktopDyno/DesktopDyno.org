@@ -6,8 +6,8 @@
     <link>https://desktopdyno.org/</link>
     <description>foo bar</description>
     <language>en-US</language>
-    <pubDate>Mon, 03 May 2021 23:38:07 GMT</pubDate>
-    <lastBuildDate>Mon, 03 May 2021 23:38:07 GMT</lastBuildDate>
+    <pubDate>Thu, 13 May 2021 14:06:17 GMT</pubDate>
+    <lastBuildDate>Thu, 13 May 2021 14:06:17 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>Copyright by Nathan Petersen</copyright>
@@ -58,6 +58,40 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>Machines</title>
+      <link>https://desktopdyno.org/guide/machines/</link>
+      <guid>https://desktopdyno.org/guide/machines/</guid>
+      <source url="https://desktopdyno.org/rss.xml">Machines</source>
+      <pubDate>Sat, 03 Apr 2021 13:10:02 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Electric Machines!</p>
+<p>Types:</p>
+<ul>
+<li><a href="./dc-machine.html">DC Machine</a></li>
+<li><a href="./induction-machine.html">Induction Machine</a></li>
+<li><a href="./synchronous-machine.html">Synchronous Machine</a></li>
+<li><a href="./reluctance-machine.html">Reluctance Machine</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>https://desktopdyno.org/</link>
+      <guid>https://desktopdyno.org/</guid>
+      <source url="https://desktopdyno.org/rss.xml">Home</source>
+      <pubDate>Fri, 02 Apr 2021 03:48:18 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Welcome to the Desktop Dyno Project.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Synchronous Machine</title>
+      <link>https://desktopdyno.org/guide/machines/synchronous-machine/</link>
+      <guid>https://desktopdyno.org/guide/machines/synchronous-machine/</guid>
+      <source url="https://desktopdyno.org/rss.xml">Synchronous Machine</source>
+      <pubDate>Sat, 03 Apr 2021 13:10:02 GMT</pubDate>
+      <content:encoded><![CDATA[<p>foo bar baz</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Guide</title>
       <link>https://desktopdyno.org/guide/</link>
       <guid>https://desktopdyno.org/guide/</guid>
@@ -83,40 +117,6 @@
 <li>Drives (tear downs, using them)</li>
 <li>Sensors (tear downs, using them)</li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Home</title>
-      <link>https://desktopdyno.org/</link>
-      <guid>https://desktopdyno.org/</guid>
-      <source url="https://desktopdyno.org/rss.xml">Home</source>
-      <pubDate>Fri, 02 Apr 2021 03:48:18 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Welcome to the Desktop Dyno Project.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Machines</title>
-      <link>https://desktopdyno.org/guide/machines/</link>
-      <guid>https://desktopdyno.org/guide/machines/</guid>
-      <source url="https://desktopdyno.org/rss.xml">Machines</source>
-      <pubDate>Sat, 03 Apr 2021 13:10:02 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Electric Machines!</p>
-<p>Types:</p>
-<ul>
-<li><a href="./dc-machine.html">DC Machine</a></li>
-<li><a href="./induction-machine.html">Induction Machine</a></li>
-<li><a href="./synchronous-machine.html">Synchronous Machine</a></li>
-<li><a href="./reluctance-machine.html">Reluctance Machine</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Synchronous Machine</title>
-      <link>https://desktopdyno.org/guide/machines/synchronous-machine/</link>
-      <guid>https://desktopdyno.org/guide/machines/synchronous-machine/</guid>
-      <source url="https://desktopdyno.org/rss.xml">Synchronous Machine</source>
-      <pubDate>Sat, 03 Apr 2021 13:10:02 GMT</pubDate>
-      <content:encoded><![CDATA[<p>foo bar baz</p>
 ]]></content:encoded>
     </item>
   </channel>
