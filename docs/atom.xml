@@ -6,7 +6,7 @@
   <author>
     <name>Nathan Petersen</name>
   </author>
-  <updated>2021-05-24T20:53:25.601Z</updated>
+  <updated>2021-05-24T22:50:20.306Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://desktopdyno.org/atom.xml"/>
   <link rel="alternate" href="https://desktopdyno.org/"/>
@@ -15,28 +15,42 @@
     <name>Nathan Petersen</name>
   </contributor>
   <entry>
-    <title type="html">DC Motor</title>
-    <id>https://desktopdyno.org/guide/motors/dc-motor/</id>
-    <link href="https://desktopdyno.org/guide/motors/dc-motor/"/>
-    <updated>2021-05-24T20:52:55.000Z</updated>
-    <content type="html"><![CDATA[<p>The DC motor performs electromechanical energy conversion using <strong>direct current (DC)</strong>, as opposed to alternating current (AC). DC motors are easy to operate and control since a simple battery can be used as the power source.</p>
-<p>Typically, there are two active parts of the DC motor: the <strong>rotor</strong> which rotates with the shaft, and the <strong>stator</strong> which is stationary.</p>
-<p>DC motors have two input terminals called the <strong>positive</strong> and <strong>negative</strong> input. In motoring operation, when a positive voltage is applied across the terminals, a current flows in the motor and the shaft spins. Conversely, in generating operation, when the shaft is rotated via an external mover, a voltage appears at the terminals of the motor. The voltage that appears is called the <strong>back-EMF</strong> (back electromotive force) and is directly proportional to the shaft speed. The motor creates torque when a current flows in the winding.</p>
-<h2 id="model"> Model</h2>
-<p>DC motors can be reasonably modeled using a few differential equations. Typically, the governing equations are divided into: 1) electrical, 2) mechanical. These two equations are coupled via the motor's current and rotary speed.</p>
-<p>In the following sections, parameters with a subscript &quot;p&quot; indicate <em>physical</em> values -- e.g. <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.00773em;">R</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> denotes the physical stator resistance value.</p>
-<h3 id="electrical"> Electrical</h3>
+    <title type="html">DC Motor Control</title>
+    <id>https://desktopdyno.org/guide/motors/dc-motor/control/</id>
+    <link href="https://desktopdyno.org/guide/motors/dc-motor/control/"/>
+    <updated>2021-05-24T22:50:09.000Z</updated>
+    <content type="html"><![CDATA[<p>goo bar</p>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-05-24T22:50:09.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
+    <title type="html">DC Motor Model</title>
+    <id>https://desktopdyno.org/guide/motors/dc-motor/model/</id>
+    <link href="https://desktopdyno.org/guide/motors/dc-motor/model/"/>
+    <updated>2021-05-24T22:50:09.000Z</updated>
+    <content type="html"><![CDATA[<p>DC motors can be reasonably modeled using a few differential equations. Typically, the governing equations are divided into: 1) electrical, 2) mechanical. These two equations are coupled via the motor's current and rotary speed.</p>
+<div><p>Nomenclature</p>
+<p>Parameters with a subscript &quot;p&quot; indicate <em>physical</em> values. For example, <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.00773em;">R</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> denotes the physical stator resistance value.</p>
+</div>
+<h2 id="electrical-model"> Electrical Model</h2>
 <p>The following equation relates the applied voltage <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>t</span><span>)</span></span></span></span> to the resulting current <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>i</span><span>(</span><span>t</span><span>)</span></span></span></span>, where <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.00773em;">R</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> is the winding resistance and <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span>L</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> is the winding inductance. Due to the winding inductance, a change is applied voltage <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>t</span><span>)</span></span></span></span> does not create an instantaneous change in current <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>i</span><span>(</span><span>t</span><span>)</span></span></span></span>; the winding has <em>dynamics</em>.</p>
 <p>The back-EMF appears in the electrical equations as <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.03588em;">ω</span><span>(</span><span>t</span><span>)</span></span></span></span> where <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is the <em>back-EMF constant</em> and depends on the motor design, and <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">ω</span><span>(</span><span>t</span><span>)</span></span></span></span> is the shaft rotational speed. Notice that at zero speed, the differential equation matches that of an RL (resistive-inductive) load.</p>
 <p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:2.113em;vertical-align:-0.686em;"></span><span><span>L</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span><span></span><span><span><span><span style="height:1.427em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span><span>dt</span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>d</span></span><span>i</span><span>(</span><span>t</span><span>)</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span style="margin-right:0.03588em;">v</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.036108em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.00773em;">R</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span>i</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.03588em;">ω</span><span>(</span><span>t</span><span>)</span></span></span></span></span></p>
 <p>The DC motor electromagnetic torque <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span></span></span></span> is proportional to the current <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span>i</span><span>(</span><span>t</span><span>)</span></span></span></span> as given by the following equation where <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is the <em>torque constant</em> and is determined by the motor design.</p>
 <p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>i</span><span>(</span><span>t</span><span>)</span></span></span></span></span></p>
-<h3 id="mechanical"> Mechanical</h3>
-<p>The developed electromagnetic torque then acts to rotate the rotor and shaft. The shaft has a certian inertia <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.09618em;">J</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.09618em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> value which determines the dynamics of the rotary motion. Typical motors also have damping and friction torques which act against the direction of motion -- the damping coefficient is <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.05017em;">B</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> and the friction value is <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>μ</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>. The load torque is <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>L</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span></span></span></span> and typically opposes positive motoring torque. The complete mechanical differential equation is given as follows:</p>
+<h2 id="mechanical-model"> Mechanical Model</h2>
+<p>The developed electromagnetic torque then acts to rotate the rotor and shaft. The shaft has a certain rotational inertia <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.09618em;">J</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.09618em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> value which determines the dynamics of the rotary motion. Typical motors also have damping and friction torques which act against the direction of motion: the damping coefficient is <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.05017em;">B</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> and the friction value is <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>μ</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>. The load torque <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>L</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span></span></span></span> is typically defined as to oppose positive motoring torque. The complete mechanical differential equation is given as follows:</p>
 <p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:2.113em;vertical-align:-0.686em;"></span><span><span style="margin-right:0.09618em;">J</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.09618em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span><span></span><span><span><span><span style="height:1.427em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span><span>dt</span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>d</span></span><span style="margin-right:0.03588em;">ω</span><span>(</span><span>t</span><span>)</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.036108em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.05017em;">B</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span style="margin-right:0.03588em;">ω</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.036108em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>μ</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span><span>sign</span></span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>(</span><span>t</span><span>))</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>L</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span></span></span></span></span></p>
 <p>Since the friction term <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.036108em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>μ</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span><span>sign</span></span><span>(</span><span style="margin-right:0.03588em;">ω</span><span>(</span><span>t</span><span>))</span></span></span></span> acts to make the mechanical system non-linear, it is typically ignored for analysis (i.e., <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>μ</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.64444em;vertical-align:0em;"></span><span>0</span></span></span></span>). This is a reasonable assumption considering that friction is small in most systems.</p>
 <p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:2.113em;vertical-align:-0.686em;"></span><span><span style="margin-right:0.09618em;">J</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.09618em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span><span></span><span><span><span><span style="height:1.427em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span><span>dt</span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span>d</span></span><span style="margin-right:0.03588em;">ω</span><span>(</span><span>t</span><span>)</span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1.036108em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.05017em;">B</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span style="margin-right:0.03588em;">ω</span><span>(</span><span>t</span><span>)</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:1em;vertical-align:-0.25em;"></span><span><span style="margin-right:0.13889em;">T</span><span><span><span><span style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>L</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span>(</span><span>t</span><span>)</span></span></span></span></span></p>
-<h3 id="block-diagram"> Block Diagram</h3>
+<h2 id="block-diagram"> Block Diagram</h2>
 <p>The differential equations described above can be represented in block diagram form to better see the interactions between the electrical and mechanical systems. By convention, the block diagram is typically formed using integrator blocks as opposed to derivatives blocks.</p>
 <p>Recall the simple rules for converting to the Laplace domain: <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.11112em;vertical-align:-0.30612em;"></span><span style="margin-right:0.19445em;position:relative;top:-0.0005599999999999772em;">∫</span><span style="margin-right:0.2777777777777778em;"></span><span>→</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1.190108em;vertical-align:-0.345em;"></span><span><span></span><span><span><span><span style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span style="height:3em;"></span><span><span><span>s</span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span style="height:3em;"></span><span><span><span>1</span></span></span></span></span><span>​</span></span><span><span style="height:0.345em;"><span></span></span></span></span></span><span></span></span></span></span></span> and <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.2251079999999999em;vertical-align:-0.345em;"></span><span><span></span><span><span><span><span style="height:0.8801079999999999em;"><span style="top:-2.6550000000000002em;"><span style="height:3em;"></span><span><span><span><span>dt</span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span style="height:3em;"></span><span><span><span><span>d</span></span></span></span></span></span><span>​</span></span><span><span style="height:0.345em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>→</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:0.43056em;vertical-align:0em;"></span><span>s</span></span></span></span>.</p>
 <p>First, the time-domain governing equations from the previous section are transformed to the Laplace domain (i.e., s-domain). Then, the equations are solved for the state variable (e.g., current, speed) in terms of the input (e.g., voltage, torque).</p>
@@ -52,15 +66,14 @@
 <li>Mechanical: <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.09618em;">J</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.09618em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>, <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.05017em;">B</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></li>
 <li>Motor Constants: <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></li>
 </ul>
-<p>These parameters can vary widely based on the motor design and application space. For example, small motors will tend to have different parameters compared to large motors. For simplicity, two motor designs will be highlighted here which are typical of real designs: large and small.</p>
+<p>These parameters can vary widely based on the motor design and application space. The table below gives reasonable ranges for each parameter.</p>
 <table>
 <thead>
 <tr>
 <th>Parameter</th>
 <th>Name</th>
 <th>Units</th>
-<th>Small Motor</th>
-<th>Large Motor</th>
+<th>Typical Value</th>
 </tr>
 </thead>
 <tbody>
@@ -68,28 +81,24 @@
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.00773em;">R</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></td>
 <td>winding resistance</td>
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span>Ω</span></span></span></span></td>
-<td>0.1 to 1</td>
-<td>0.01 to 0.1</td>
+<td>Small motor: 0.1 to 1<br/>Large motor: 0.01 to 0.1</td>
 </tr>
 <tr>
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span>L</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></td>
 <td>winding inductance</td>
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.68333em;vertical-align:0em;"></span><span><span>H</span></span></span></span></span></td>
 <td>0.1e-3 to 0.1</td>
-<td>0.1e-3 to 0.1</td>
 </tr>
 <tr>
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.09618em;">J</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.09618em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></td>
 <td>rotational inertia</td>
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span><span>kg</span></span><span style="margin-right:0.2222222222222222em;"></span><span>⋅</span><span style="margin-right:0.2222222222222222em;"></span></span><span><span style="height:0.8141079999999999em;vertical-align:0em;"></span><span><span><span>m</span></span><span><span><span><span style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>2</span></span></span></span></span></span></span></span></span></span></span></td>
-<td>1e-6 to 100e-6</td>
-<td>1e-3 to 100e-3</td>
+<td>Small motor: 1e-6 to 100e-6<br/>Large motor: 1e-3 to 100e-3</td>
 </tr>
 <tr>
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.05017em;">B</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></td>
 <td>rotational damping</td>
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.392331em;vertical-align:-0.52em;"></span><span><span></span><span><span><span><span style="height:0.872331em;"><span style="top:-2.655em;"><span style="height:3em;"></span><span><span><span><span>rad/sec</span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span style="height:3em;"></span><span><span><span><span>N</span></span><span>⋅</span><span><span>m</span></span></span></span></span></span><span>​</span></span><span><span style="height:0.52em;"><span></span></span></span></span></span><span></span></span></span></span></span></td>
-<td>1e-6 to 100e-6</td>
 <td>1e-6 to 100e-6</td>
 </tr>
 <tr>
@@ -97,27 +106,25 @@
 <td>torque constant</td>
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.217331em;vertical-align:-0.345em;"></span><span><span></span><span><span><span><span style="height:0.872331em;"><span style="top:-2.6550000000000002em;"><span style="height:3em;"></span><span><span><span><span>A</span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span style="height:3em;"></span><span><span><span><span>N</span></span><span>⋅</span><span><span>m</span></span></span></span></span></span><span>​</span></span><span><span style="height:0.345em;"><span></span></span></span></span></span><span></span></span></span></span></span></td>
 <td>0.01 to 1</td>
-<td>0.01 to 1</td>
 </tr>
 <tr>
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></td>
 <td>back-EMF constant</td>
 <td><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:1.392331em;vertical-align:-0.52em;"></span><span><span></span><span><span><span><span style="height:0.872331em;"><span style="top:-2.655em;"><span style="height:3em;"></span><span><span><span><span>(rad/sec)</span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span style="height:3em;"></span><span><span><span><span>V</span></span></span></span></span></span><span>​</span></span><span><span style="height:0.52em;"><span></span></span></span></span></span><span></span></span></span></span></span></td>
 <td>0.01 to 1</td>
-<td>0.01 to 1</td>
 </tr>
 </tbody>
 </table>
-<h3 id="electrical-2"> Electrical</h3>
-<p>Since the electrical power loss is proportional to the winding resistance, motor designers tend to try to reduce the resistance <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.00773em;">R</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>. For small motors, the total power loss is typically neglible since the total motor power is small. Therefore, small motors tend to have a higher resistance since less copper can be used which lowers material cost. However, for large motors, resistance-based losses can cause significant thermal issues thus pushing designers to minimize <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.00773em;">R</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>.</p>
+<h3 id="electrical"> Electrical</h3>
+<p>Since the electrical power loss is proportional to the winding resistance, motor designers tend to try to reduce the resistance <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.00773em;">R</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>. For small motors, the total power loss is typically negligible since the total motor power is small. Therefore, small motors tend to have a higher resistance since less copper can be used which lowers material cost. However, for large motors, resistance-based losses can cause significant thermal issues thus pushing designers to minimize <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span style="margin-right:0.00773em;">R</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>.</p>
 <p>The inductance <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.969438em;vertical-align:-0.286108em;"></span><span><span>L</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> is less affected by motor size, however, it varies widely based on the motor application. In practice, small inductance values can cause current ripple in the motor due to the switching nature of the drive power electronics. Large current ripple can cause issues such as increased torque ripple and higher losses. However, if the inductance is too large, the electrical dynamics can be limited. Furthermore, large inductance values typically require more materials, thus make the motor heavier and cost more.</p>
 <p>The electrical time constant is given as <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.58056em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.1132em;">τ</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.1132em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:1.036108em;vertical-align:-0.286108em;"></span><span><span>L</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span><span>/</span><span><span style="margin-right:0.00773em;">R</span><span><span><span><span style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>p</span></span></span></span><span>​</span></span><span><span style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>. This determines how fast the motor current changes as the voltage changes. Since the resistance of large motors is typically smaller compared to small motors, the large motors tend to have faster electrical dynamics.</p>
-<h3 id="mechanical-2"> Mechanical</h3>
+<h3 id="mechanical"> Mechanical</h3>
 <p>The size of the motor directly affects the rotational inertia: larger motors have a bigger moment of inertia. This means that large motors have slow mechanical dynamics; they change speed slowly.</p>
 <p>The rotary damping typically comes from the motor bearings which hold the shaft. Typically, lower damping is better due to lower power loss.</p>
 <h3 id="motor-constants"> Motor Constants</h3>
 <p>The electromagnetic design of the motor determines the torque constant <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and back-EMF constant <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>. In MKS system of units, <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> are equal in value. Regardless of units, the two constants scale together: increasing <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> will increase <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and vice-versa.</p>
-<p>When the DC motor is driven using a voltage source, the resulting top speed is determined by the back-EMF constant. Thus, for high speed motors, <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is typically small. However, this also reduces <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, thus limiting the torque per ampere of the motor. The best values for <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> are highly application dependent and are a leading driver during the motor design.</p>
+<p>When the DC motor is driven using a voltage source, the resulting top speed is determined by the back-EMF constant. Thus, for high-speed motors, <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is typically small. However, this also reduces <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, thus limiting the torque per ampere of the motor. The best values for <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>t</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.83333em;vertical-align:-0.15em;"></span><span><span style="margin-right:0.07153em;">K</span><span><span><span><span style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>e</span></span></span></span><span>​</span></span><span><span style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> are highly application dependent and are a leading driver during the motor design.</p>
 ]]></content>
     <author>
       <name>Nathan Petersen</name>
@@ -125,23 +132,7 @@
     <contributor>
       <name>Nathan Petersen</name>
     </contributor>
-    <published>2021-05-24T20:52:55.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
-    <title type="html">Induction Motor</title>
-    <id>https://desktopdyno.org/guide/motors/induction-motor/</id>
-    <link href="https://desktopdyno.org/guide/motors/induction-motor/"/>
-    <updated>2021-05-24T20:52:55.000Z</updated>
-    <content type="html"><![CDATA[<p>Foo bar baz</p>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-05-24T20:52:55.000Z</published>
+    <published>2021-05-24T22:50:09.000Z</published>
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
@@ -150,6 +141,110 @@
     <link href="https://desktopdyno.org/guide/motors/reluctance-motor/"/>
     <updated>2021-05-24T20:52:55.000Z</updated>
     <content type="html"><![CDATA[<p>foo bar</p>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-05-24T20:52:55.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
+    <title type="html">Synchronous Motor</title>
+    <id>https://desktopdyno.org/guide/motors/synchronous-motor/</id>
+    <link href="https://desktopdyno.org/guide/motors/synchronous-motor/"/>
+    <updated>2021-05-24T20:52:55.000Z</updated>
+    <content type="html"><![CDATA[<p>foo bar baz</p>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-05-24T20:52:55.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
+    <title type="html">DC Motor</title>
+    <id>https://desktopdyno.org/guide/motors/dc-motor/</id>
+    <link href="https://desktopdyno.org/guide/motors/dc-motor/"/>
+    <updated>2021-05-24T22:50:09.000Z</updated>
+    <content type="html"><![CDATA[<p>The DC motor performs electromechanical energy conversion using <strong>direct current (DC)</strong>, as opposed to alternating current (AC). DC motors are easy to operate and control since a simple battery can be used as the power source.</p>
+<p>Typically, there are two active parts of the DC motor: the <strong>rotor</strong> which rotates with the shaft, and the <strong>stator</strong> which is stationary.</p>
+<p>DC motors have two input terminals called the <strong>positive</strong> and <strong>negative</strong> input. In motoring operation, when a positive voltage is applied across the terminals, a current flows in the motor and the shaft spins. Conversely, in generating operation, when the shaft is rotated via an external mover, a voltage appears at the terminals of the motor. The voltage that appears is called the <strong>back-EMF</strong> (back electromotive force) and is directly proportional to the shaft speed. The motor creates torque when a current flows in the winding.</p>
+<div><p>Smart Learning</p>
+<p>The principles behind DC motors are common to numerous other electric motor types.</p>
+<p>When learning about motors, start with the DC motor; once mastered, dive into more advanced types!</p>
+</div>
+<h2 id="subpages"> Subpages</h2>
+<ul>
+<li><a href="./model.html">DC Motor Model</a></li>
+<li><a href="./control.html">DC Motor Control</a></li>
+</ul>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-05-24T22:50:09.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
+    <title type="html">Motors</title>
+    <id>https://desktopdyno.org/guide/motors/</id>
+    <link href="https://desktopdyno.org/guide/motors/"/>
+    <updated>2021-05-24T22:50:09.000Z</updated>
+    <content type="html"><![CDATA[<p>Electric Motors!</p>
+<p>Types:</p>
+<ul>
+<li><a href="./dc-motor/">DC Motor</a></li>
+<li><a href="./induction-motor.html">Induction Motor</a></li>
+<li><a href="./synchronous-motor.html">Synchronous Motor</a></li>
+<li><a href="./reluctance-motor.html">Reluctance Motor</a></li>
+</ul>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-05-24T20:52:55.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
+    <title type="html">Hardware</title>
+    <id>https://desktopdyno.org/hardware/</id>
+    <link href="https://desktopdyno.org/hardware/"/>
+    <updated>2021-04-03T13:10:02.000Z</updated>
+    <content type="html"><![CDATA[<p>A section all about various real hardware:</p>
+<ul>
+<li>Dynos (custom designed, detailed articles about building, designing, understanding them)</li>
+<li>Motors (tear down real motors on the market, characterize them, run them)</li>
+<li>Drives (tear downs, using them)</li>
+<li>Sensors (tear downs, using them)</li>
+</ul>
+]]></content>
+    <author>
+      <name>Nathan Petersen</name>
+    </author>
+    <contributor>
+      <name>Nathan Petersen</name>
+    </contributor>
+    <published>2021-04-03T13:10:02.000Z</published>
+    <rights>Copyright by Nathan Petersen</rights>
+  </entry>
+  <entry>
+    <title type="html">Induction Motor</title>
+    <id>https://desktopdyno.org/guide/motors/induction-motor/</id>
+    <link href="https://desktopdyno.org/guide/motors/induction-motor/"/>
+    <updated>2021-05-24T20:52:55.000Z</updated>
+    <content type="html"><![CDATA[<p>Foo bar baz</p>
 ]]></content>
     <author>
       <name>Nathan Petersen</name>
@@ -181,28 +276,6 @@
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
   <entry>
-    <title type="html">Hardware</title>
-    <id>https://desktopdyno.org/hardware/</id>
-    <link href="https://desktopdyno.org/hardware/"/>
-    <updated>2021-04-03T13:10:02.000Z</updated>
-    <content type="html"><![CDATA[<p>A section all about various real hardware:</p>
-<ul>
-<li>Dynos (custom designed, detailed articles about building, designing, understanding them)</li>
-<li>Motors (tear down real motors on the market, characterize them, run them)</li>
-<li>Drives (tear downs, using them)</li>
-<li>Sensors (tear downs, using them)</li>
-</ul>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-04-03T13:10:02.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
     <title type="html">Home</title>
     <id>https://desktopdyno.org/</id>
     <link href="https://desktopdyno.org/"/>
@@ -216,45 +289,6 @@
       <name>Nathan Petersen</name>
     </contributor>
     <published>2021-04-02T03:48:18.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
-    <title type="html">Motors</title>
-    <id>https://desktopdyno.org/guide/motors/</id>
-    <link href="https://desktopdyno.org/guide/motors/"/>
-    <updated>2021-05-24T20:52:55.000Z</updated>
-    <content type="html"><![CDATA[<p>Electric Motors!</p>
-<p>Types:</p>
-<ul>
-<li><a href="./dc-motor.html">DC Motor</a></li>
-<li><a href="./induction-motor.html">Induction Motor</a></li>
-<li><a href="./synchronous-motor.html">Synchronous Motor</a></li>
-<li><a href="./reluctance-motor.html">Reluctance Motor</a></li>
-</ul>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-05-24T20:52:55.000Z</published>
-    <rights>Copyright by Nathan Petersen</rights>
-  </entry>
-  <entry>
-    <title type="html">Synchronous Motor</title>
-    <id>https://desktopdyno.org/guide/motors/synchronous-motor/</id>
-    <link href="https://desktopdyno.org/guide/motors/synchronous-motor/"/>
-    <updated>2021-05-24T20:52:55.000Z</updated>
-    <content type="html"><![CDATA[<p>foo bar baz</p>
-]]></content>
-    <author>
-      <name>Nathan Petersen</name>
-    </author>
-    <contributor>
-      <name>Nathan Petersen</name>
-    </contributor>
-    <published>2021-05-24T20:52:55.000Z</published>
     <rights>Copyright by Nathan Petersen</rights>
   </entry>
 </feed>
