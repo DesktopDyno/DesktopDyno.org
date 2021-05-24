@@ -49,15 +49,15 @@ module.exports = config({
           children: [
             ["/guide/", "Guide Introduction"],
             {
-              title: "Machines",
+              title: "Motors",
               prefix: "/guide",
               collapsable: false,
               children: [
-                ["/machines/", "Machine Introduction"],
-                "/machines/dc-machine.md",
-                "/machines/induction-machine.md",
-                "/machines/synchronous-machine.md",
-                "/machines/reluctance-machine.md",
+                ["/motors/", "Motors Introduction"],
+                "/motors/dc-motor.md",
+                "/motors/induction-motor.md",
+                "/motors/synchronous-motor.md",
+                "/motors/reluctance-motor.md",
               ]
             }
           ],
