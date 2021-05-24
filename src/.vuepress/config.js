@@ -46,14 +46,25 @@ module.exports = config({
         {
           title: "Guide",
           collapsable: false,
+          prefix: "/guide",
           children: [
-            ["/guide/", "Guide Introduction"],
+            ["/", "Guide Overview"],
             {
-              title: "Motors",
-              prefix: "/guide",
+              title: "Electric Motors",
+              prefix: "/motors",
               collapsable: false,
               children: [
-                ["/motors/", "Motors Introduction"],
+                ["/", "Motors Overview"],
+                {
+                  title: "DC Motor",
+                  prefix: "/dc-motor",
+                  collapsable: true,
+                  children: [
+                    ["/", "Overview"],
+                    ["/model.md", "Model"],
+                    ["/control.md", "Control"],
+                  ],
+                },
                 "/motors/dc-motor.md",
                 "/motors/induction-motor.md",
                 "/motors/synchronous-motor.md",

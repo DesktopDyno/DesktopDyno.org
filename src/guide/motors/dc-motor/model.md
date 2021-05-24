@@ -1,20 +1,14 @@
 ---
-title: DC Motor
+title: DC Motor Model
 ---
-
-The DC motor performs electromechanical energy conversion using **direct current (DC)**, as opposed to alternating current (AC). DC motors are easy to operate and control since a simple battery can be used as the power source.
-
-Typically, there are two active parts of the DC motor: the **rotor** which rotates with the shaft, and the **stator** which is stationary.
-
-DC motors have two input terminals called the **positive** and **negative** input. In motoring operation, when a positive voltage is applied across the terminals, a current flows in the motor and the shaft spins. Conversely, in generating operation, when the shaft is rotated via an external mover, a voltage appears at the terminals of the motor. The voltage that appears is called the **back-EMF** (back electromotive force) and is directly proportional to the shaft speed. The motor creates torque when a current flows in the winding.
-
-## Model
 
 DC motors can be reasonably modeled using a few differential equations. Typically, the governing equations are divided into: 1) electrical, 2) mechanical. These two equations are coupled via the motor's current and rotary speed.
 
-In the following sections, parameters with a subscript "p" indicate *physical* values -- e.g. $R_p$ denotes the physical stator resistance value.
+:::: info Nomenclature
+Parameters with a subscript "p" indicate *physical* values. For example, $R_p$ denotes the physical stator resistance value.
+::::
 
-### Electrical
+## Electrical Model
 
 The following equation relates the applied voltage $v(t)$ to the resulting current $i(t)$, where $R_p$ is the winding resistance and $L_p$ is the winding inductance. Due to the winding inductance, a change is applied voltage $v(t)$ does not create an instantaneous change in current $i(t)$; the winding has *dynamics*.
 
@@ -30,9 +24,9 @@ $$
 T_e(t) = K_t i(t)
 $$
 
-### Mechanical
+## Mechanical Model
 
-The developed electromagnetic torque then acts to rotate the rotor and shaft. The shaft has a certian inertia $J_p$ value which determines the dynamics of the rotary motion. Typical motors also have damping and friction torques which act against the direction of motion -- the damping coefficient is $B_p$ and the friction value is $T_\mu$. The load torque is $T_L(t)$ and typically opposes positive motoring torque. The complete mechanical differential equation is given as follows:
+The developed electromagnetic torque then acts to rotate the rotor and shaft. The shaft has a certain rotational inertia $J_p$ value which determines the dynamics of the rotary motion. Typical motors also have damping and friction torques which act against the direction of motion: the damping coefficient is $B_p$ and the friction value is $T_\mu$. The load torque $T_L(t)$ is typically defined as to oppose positive motoring torque. The complete mechanical differential equation is given as follows:
 
 $$
 J_p \frac{\text{d}\omega(t)}{\text{dt}} = T_e(t) - B_p \omega(t) - T_\mu \text{sign}(\omega(t)) - T_L(t)
@@ -45,7 +39,7 @@ J_p \frac{\text{d}\omega(t)}{\text{dt}} = T_e(t) - B_p \omega(t) - T_L(t)
 $$
 
 
-### Block Diagram
+## Block Diagram
 
 The differential equations described above can be represented in block diagram form to better see the interactions between the electrical and mechanical systems. By convention, the block diagram is typically formed using integrator blocks as opposed to derivatives blocks.
 
@@ -77,21 +71,21 @@ The DC motor model contains the following six parameters:
 - Mechanical: $J_p$, $B_p$
 - Motor Constants: $K_t$, $K_e$
 
-These parameters can vary widely based on the motor design and application space. For example, small motors will tend to have different parameters compared to large motors. For simplicity, two motor designs will be highlighted here which are typical of real designs: large and small.
+These parameters can vary widely based on the motor design and application space. The table below gives reasonable ranges for each parameter.
 
-| Parameter | Name | Units | Small Motor | Large Motor |
-| -- | -- | -- | -- | -- |
-| $R_p$ | winding resistance | $\Omega$ | 0.1 to 1 | 0.01 to 0.1 |
-| $L_p$ | winding inductance | $\text{H}$ | 0.1e-3 to 0.1 | 0.1e-3 to 0.1 |
-| $J_p$ | rotational inertia | $\text{kg} \cdot \text{m}^2$ | 1e-6 to 100e-6 | 1e-3 to 100e-3 | 
-| $B_p$ | rotational damping | $\frac{\text{N} \cdot \text{m}}{\text{rad/sec}}$ | 1e-6 to 100e-6 | 1e-6 to 100e-6 |
-| $K_t$ | torque constant | $\frac{\text{N} \cdot \text{m}}{\text{A}}$ | 0.01 to 1 | 0.01 to 1 |
-| $K_e$ | back-EMF constant | $\frac{\text{V}}{\text{(rad/sec)}}$ | 0.01 to 1 | 0.01 to 1 |
+| Parameter | Name | Units | Typical Value |
+| -- | -- | -- | -- |
+| $R_p$ | winding resistance | $\Omega$ | Small motor: 0.1 to 1<br/>Large motor: 0.01 to 0.1 |
+| $L_p$ | winding inductance | $\text{H}$ | 0.1e-3 to 0.1 |
+| $J_p$ | rotational inertia | $\text{kg} \cdot \text{m}^2$ | Small motor: 1e-6 to 100e-6<br/>Large motor: 1e-3 to 100e-3 |
+| $B_p$ | rotational damping | $\frac{\text{N} \cdot \text{m}}{\text{rad/sec}}$ | 1e-6 to 100e-6 |
+| $K_t$ | torque constant | $\frac{\text{N} \cdot \text{m}}{\text{A}}$ | 0.01 to 1 |
+| $K_e$ | back-EMF constant | $\frac{\text{V}}{\text{(rad/sec)}}$ | 0.01 to 1 |
 
 
 ### Electrical
 
-Since the electrical power loss is proportional to the winding resistance, motor designers tend to try to reduce the resistance $R_p$. For small motors, the total power loss is typically neglible since the total motor power is small. Therefore, small motors tend to have a higher resistance since less copper can be used which lowers material cost. However, for large motors, resistance-based losses can cause significant thermal issues thus pushing designers to minimize $R_p$.
+Since the electrical power loss is proportional to the winding resistance, motor designers tend to try to reduce the resistance $R_p$. For small motors, the total power loss is typically negligible since the total motor power is small. Therefore, small motors tend to have a higher resistance since less copper can be used which lowers material cost. However, for large motors, resistance-based losses can cause significant thermal issues thus pushing designers to minimize $R_p$.
 
 The inductance $L_p$ is less affected by motor size, however, it varies widely based on the motor application. In practice, small inductance values can cause current ripple in the motor due to the switching nature of the drive power electronics. Large current ripple can cause issues such as increased torque ripple and higher losses. However, if the inductance is too large, the electrical dynamics can be limited. Furthermore, large inductance values typically require more materials, thus make the motor heavier and cost more.
 
@@ -110,6 +104,6 @@ The rotary damping typically comes from the motor bearings which hold the shaft.
 
 The electromagnetic design of the motor determines the torque constant $K_t$ and back-EMF constant $K_e$. In MKS system of units, $K_t$ and $K_e$ are equal in value. Regardless of units, the two constants scale together: increasing $K_e$ will increase $K_t$ and vice-versa.
 
-When the DC motor is driven using a voltage source, the resulting top speed is determined by the back-EMF constant. Thus, for high speed motors, $K_e$ is typically small. However, this also reduces $K_t$, thus limiting the torque per ampere of the motor. The best values for $K_t$ and $K_e$ are highly application dependent and are a leading driver during the motor design.
+When the DC motor is driven using a voltage source, the resulting top speed is determined by the back-EMF constant. Thus, for high-speed motors, $K_e$ is typically small. However, this also reduces $K_t$, thus limiting the torque per ampere of the motor. The best values for $K_t$ and $K_e$ are highly application dependent and are a leading driver during the motor design.
 
 
